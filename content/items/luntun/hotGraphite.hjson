@@ -1,0 +1,15 @@
+{
+	description: aboba
+	color: 4D4D5A
+hardness: 1
+    research: superCoal
+	charge: 0.0
+	explosiveness: 0
+	flammability: 0.2
+	radioactivity: 0
+	cost: 3.5
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

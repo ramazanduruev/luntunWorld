@@ -1,0 +1,114 @@
+
+hitSize: 12
+flying: true
+speed: 1.6
+drag: 0.1
+accel: 0.1
+rotateSpeed: 3
+health: 300
+createWreck: false
+outlineColor: 000000FF
+engines: [{
+  x: 0
+  y: 0
+  radius: 0
+  rotation: -90
+}]
+engineSize: 0
+itemCapacity: 0
+researchCostMultiplier: 0
+weapons: [
+        {
+        name: voidGuard-weapon
+        x: -2
+        y: 3
+        shootX: 2
+        shootY: 0.75
+        recoil: 1
+        top: false
+        //layerOffset: -0.001
+        inaccuracy: 1
+        reload: 8
+        mirror: true
+        alternate: true
+        shootSound: lasershoot
+        bullet: {
+                type: BasicBulletType
+                speed: 4
+                homingPower: 0.15
+                homingRange: 24
+                homingDelay: 10
+                lifetime: 35
+                buildingDamageMultiplier: 0.8
+                damage: 10
+                width: 8.2
+                height: 8.5
+                collidesTeam: true
+                healColor: 2F2F2FFF
+                frontColor: 2F2F2FFF
+                backColor: 2F2F2FFF
+                trailWidth: 1.8
+                trailLength: 5
+                trailColor: 2F2F2FFF
+                weaveScale: 4
+                weaveMag: 2
+                shootEffect: {
+                        type: ParticleEffect
+                        particles: 2
+                        sizeFrom: 2
+                        sizeTo: 0
+                        length: 15
+                        lifetime: 25
+                        colorFrom: 2F2F2FFF
+                        colorTo: 2F2F2FFF
+                        cone: 10
+                }
+                hitEffect: {
+                        type: WaveEffect
+                        sizeFrom: 1
+                        sizeTo: 2
+                        lifetime: 15
+                        strokeFrom: 2
+                        sizeTo: 0
+                        colorFrom: 2F2F2FFF
+                        colorTo: 2F2F2FFF
+                }
+                despawnEffect: {
+                        type: WaveEffect
+                        sizeFrom: 1
+                        sizeTo: 2
+                        lifetime: 25
+                        strokeFrom: 3
+                        sizeTo: 0
+                        colorFrom: 2F2F2FFF
+                        colorTo: 2F2F2FFF
+                }
+                }
+        }
+      ]
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 1B1111
+        colorTo: 1B1111
+        particles: 1
+        cone: 360
+        length: 1
+        baseLength: 1
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 1
+        offset: 0
+        lightScl: 1.5
+        lightOpacity: 2
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000010
+        y : 0
+        x : 0
+    }
+]

@@ -1,0 +1,16 @@
+
+captureWave: 2
+planet: luntun
+sector: 16
+research: colonia
+difficulty: 1
+alwaysUnlocked: false
+research: {
+parent: Z223BossFight
+objectives: [
+{
+type: SectorComplete
+preset: Z223BossFight
+  }
+ ]
+}

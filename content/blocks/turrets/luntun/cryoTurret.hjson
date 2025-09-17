@@ -1,0 +1,67 @@
+{
+  ammoTypes:{
+    ice:{
+      x: 0
+      y: -6
+      damage: 6
+      buildingDamageMultiplier: 0.01
+      hitColor: 3D6E70FF
+      hitEffect: lightningCharge
+      shootEffect: lancerLaserChargeBegin
+      width: 10
+      height: 8
+      range: 140
+      speed: 10
+      type: BasicBulletType
+      status: freezing
+      statusDuration: 60
+  }
+ }
+shoot: {
+ type: ShootBarrel
+ shotDelay: 3
+    barrels: [
+    1, -6, 0,
+    0, -6, 0,
+    0, -6, 0,
+    -1, -6, 0
+    ]
+}
+   requirements: [
+    greenwe/200
+    metal/40
+    ice/20
+]
+
+   research: {
+      parent: sartun
+        requirements: [
+           greenwe/6000
+           metal/4000
+           ice/300
+   ]
+  }
+
+consumes: {
+  }
+
+  reload: 70
+  range: 140
+  shootEffect: casing1
+  category: turret
+  health: 450
+  size: 2
+  itemCapacity: 5
+  hasLiquids: false
+  lightLiquid: water
+  type: ItemTurret
+  shootSound: iceShoot
+  outlineColor: 242D39FF
+
+
+
+drawer: {
+  type: DrawTurret
+  basePrefix: stone-
+}
+}

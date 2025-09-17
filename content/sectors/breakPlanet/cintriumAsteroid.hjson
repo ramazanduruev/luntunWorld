@@ -1,0 +1,16 @@
+
+captureWave: 8
+planet: breakPlanet
+sector: 13
+difficulty: 0
+alwaysUnlocked: false
+research: center
+research: {
+parent: newPlanetTutorial
+objectives: [
+{
+type: SectorComplete
+preset: newPlanetTutorial
+  }
+ ]
+}

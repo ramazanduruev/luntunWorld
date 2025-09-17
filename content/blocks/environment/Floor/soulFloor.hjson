@@ -1,0 +1,4 @@
+type: floor,
+name: soulSand,
+variants: 3,
+wall: goldWalls

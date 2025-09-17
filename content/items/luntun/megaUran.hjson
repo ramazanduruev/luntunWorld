@@ -1,0 +1,15 @@
+{
+	description: too much radioactivity
+	color: 3D6E70FF
+hardness: 3
+    research: radioactiveCoal
+	charge: 0.0
+	explosiveness: 0
+	flammability: 0
+	radioactivity: 1
+	cost: 4.5
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

@@ -1,0 +1,15 @@
+
+planet: luntun
+sector: 17
+research: colonia
+difficulty: 8
+alwaysUnlocked: false
+research: {
+parent: TierFour
+objectives: [
+{
+type: SectorComplete
+preset: TierFour
+  }
+ ]
+}

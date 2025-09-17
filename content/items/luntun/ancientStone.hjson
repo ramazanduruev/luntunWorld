@@ -1,0 +1,14 @@
+{
+	color: 5D9393FF
+	hardness: 4
+    research: gold
+	charge: 0.0
+	explosiveness: 0
+	flammability: 0
+	radioactivity: 0
+	cost: 3.5
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

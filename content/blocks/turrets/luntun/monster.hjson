@@ -1,0 +1,75 @@
+{
+  ammoTypes:{
+    greenwe:{
+      x: 0
+      y: -6
+      damage: 15
+      buildingDamageMultiplier: 0.4
+      hitColor: 3D6E70FF
+      hitEffect: lightningCharge
+      shootEffect: pointShockwave
+      width: 10
+      height: 8
+      range: 140
+      speed: 7
+      type: BasicBulletType
+  }
+    metal:{
+      x: 0
+      y: -6
+      damage: 20
+      buildingDamageMultiplier: 0.5
+      hitColor: 3D6E70FF
+      hitEffect: lightningCharge
+      shootEffect: pointShockwave
+      width: 10
+      height: 8
+      range: 130
+      speed: 8
+      type: BasicBulletType
+  }
+ }
+shoot: {
+ type: ShootBarrel
+ shotDelay: 3
+    barrels: [
+    1, -6, 0,
+    0, -6, 0,
+    0, -6, 0,
+    -1, -6, 0
+    ]
+}
+   requirements: [
+    greenwe/40
+]
+
+   research: {
+      parent: colonia
+        requirements: [
+           greenwe/60
+   ]
+  }
+
+consumes: {
+  }
+
+  reload: 30
+  range: 140
+  shootEffect: casing1
+  category: turret
+  health: 600
+  size: 2
+  itemCapacity: 5
+  hasLiquids: false
+  lightLiquid: water
+  type: ItemTurret
+  shootSound: shootMissilePlasma
+  outlineColor: 242D39FF
+
+
+
+drawer: {
+  type: DrawTurret
+  basePrefix: stone-
+}
+}

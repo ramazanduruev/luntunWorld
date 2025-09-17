@@ -1,0 +1,42 @@
+{
+    type: Reconstructor
+    health: 2300
+    size: 7
+    constructTime: 6000
+    upgrades: [
+    ["runner", "feather"]
+    ["ceramic", "nail"]
+    ]
+    consumes: {
+        power: 6
+        items: {
+            items: [
+              greenwe/380
+              metal/340
+              gold/220
+              powerPlate/55
+              nanoMatherial/20
+              closedSoul/3
+            ]
+        }
+    }
+    requirements: [
+     greenwe/1000
+     metal/890
+     gold/180
+     nanoMatherial/80
+     closedSoul/3
+    ]
+    category: units
+    research: {
+      parent: tThree
+       requirements: [
+        greenwe/28600
+        metal/16900
+        gold/35000
+        powerPlate/1200
+        ice/6000
+        closedSoul/33
+  ]
+ }
+ }

@@ -1,0 +1,16 @@
+
+captureWave: 8
+planet: breakPlanet
+sector: 11
+difficulty: 0
+alwaysUnlocked: false
+research: center
+research: {
+parent: crystalAsteroid
+objectives: [
+{
+type: SectorComplete
+preset: crystalAsteroid
+  }
+ ]
+}

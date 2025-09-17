@@ -1,0 +1,58 @@
+type: ContinuousLiquidTurret
+targetAir: true
+targetGround: true
+health: 800
+size: 3
+range: 135
+recoil: 1
+shake: 1
+liquidConsumed: 0.08
+rotateSpeed: 5
+outlines: true
+outlineColor: 242D39FF
+ammoTypes: {
+  asgandium: {
+  type: ContinuousFlameBulletType
+    damage: 12
+    length: 130
+    knockback: 0.1
+    pierceCap: 5
+    status: corroded
+    colors:[
+    4e835e8c,
+    6da37eb2,
+    88c29acc,
+    cbf7d6ff,
+    ffffffff
+    ]
+    lightColor: 473B78FF
+    flareColor: 473B78FF
+  }
+}
+requirements: [
+  greenwe/220
+  metal/55
+  gold/80
+  powerPlate/30
+  ice/25
+]
+category: turret
+loopSound: loopSpray
+shootY: 7
+research: {
+      parent: sartun
+       requirements: [
+       greenwe/2000
+       gold/1000
+       ice/4000
+  ]
+ }
+consumes: {
+power: 0.4
+  }
+researchCostMultiplier: 0.03
+
+drawer: {
+  type: DrawTurret
+  basePrefix: stone-
+}

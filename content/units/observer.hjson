@@ -1,0 +1,42 @@
+type: legs
+speed: 0.5
+health: 150
+armor: 2
+buildSpeed: 4
+mineSpeed: 5
+mineTier: 1
+itemCapacity: 10
+hitSize: 14
+outlineColor: 28282d
+outlineRadius: 1
+canDrown: false
+legCount: 6
+legLength: 8
+legSpeed: 0.28
+legForwardScl: 0.46
+legMoveSpace: 0.78
+
+weapons: [
+{
+name: none
+x: 6
+y: 0
+rotate: false
+rotateSpeed: 6
+reload: 10
+recoil: 1 
+shootSound: lasershoot
+inaccuracy: 10
+alternate: false
+mirror: false
+ejectEffect: none
+bullet: {
+type: BasicBulletType
+length: 6
+width: 6
+speed: 2.4
+damage: 16
+lifetime: 40
+}
+}
+]

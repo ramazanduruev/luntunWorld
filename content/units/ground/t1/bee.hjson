@@ -1,0 +1,85 @@
+{
+  name: bee
+  controller: SuicideAI
+  type: mech
+  mechSideSway: 0.25
+  armor: 3
+  speed: 1.2
+  hitSize: 9
+  flying: false
+  health: 80
+  range: 30
+  outlineRadius: 3
+  outlineColor: 171720FF
+
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: FEFF70FF
+        colorTo: ECEC68FF
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 1.7
+        lightOpacity: 1.7
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        offset: 0
+        lightScl: 1.5
+        lightOpacity: 2
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000010
+        y : 1
+        x : 0
+    }
+]
+
+  weapons: 
+  [
+    {
+    name: none
+    reload: 25
+    shootCone: 180
+    ejectEffect: none
+    shootSound: explosion
+    bullet: 
+      {
+      type: BombBulletType
+      lightningColor: FFFFA3FF
+      lightning: 2
+      lightningDamage: 10
+      lightningLength: 6
+      lightningCone: 360
+      lightningLengthRand: 6
+      hitEffect: pulverize
+      lifetime: 10
+      speed: 1
+      splashDamageRadius: 25
+      instantDisappear: true
+      splashDamage: 98
+      killShooter: true
+      hittable: false
+      collidesAir: true
+       }
+    }
+  ]
+  outlineColor:3C3838FF
+  outlines:true
+  outlineRadius:2.5
+
+research: {
+      parent: tOne
+       requirements: [
+         gold/80
+  ]
+ }
+}
+
+
+
+

@@ -1,0 +1,4 @@
+variants: 4
+  itemDrop: ancientStone
+  name: tuntium Ore
+  type: OreBlock

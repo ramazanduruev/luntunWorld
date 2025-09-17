@@ -1,0 +1,159 @@
+{
+type: mech
+speed: 0.8
+hitSize: 16
+health: 640
+armor: 8
+mechSideSway: 0.25
+outlineColor: 171720FF
+  outlines: true
+  outlineRadius: 5
+immunities: [burning, shocked
+]
+weapons: [
+    {
+      name: ninja-weapon1
+      x: 11
+      y: 0
+      reload: 120
+      shootSound: shootElude
+      rotate: false
+      mirror: false
+      chargeSound: lasercharge2
+      alternate: false
+      shoot: {
+        firstShotDelay: 60
+        shots: 4
+        shotDelay: 3
+      }
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4.2
+        lifetime: 40
+        damage: 25
+        pierce: true
+        pierceCap: 3
+        buildingDamageMultiplier: 0.8
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+{
+      name: ninja-weapon2
+      x: 5.5
+      y: 1.6
+      reload: 20
+      shootSound: flame
+      rotate: false
+      mirror: false
+      chargeSound: lasercharge2
+      alternate: false
+      layerOffset: -0.001
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 40
+        damage: 20
+        pierce: true
+        pierceCap: 3
+        buildingDamageMultiplier: 1.2
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+{
+      name: ninja-weapon3
+      x: -5.5
+      y: 1.6
+      reload: 20
+      shootSound: flame
+      rotate: false
+      mirror: false
+      chargeSound: lasercharge2
+      alternate: false
+      layerOffset: -0.001
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 40
+        damage: 20
+        pierce: true
+        pierceCap: 3
+        buildingDamageMultiplier: 1.2
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+{
+name: ninja-weapon4
+		reload: 300
+		x: -11
+		y: 0
+		mirror: false
+		rotate: false
+		rotateSpeed: 3
+  shootSound: shootLancer
+  layerOffset: -0.001
+  shootStatus: superSpeed
+  shootStatusDuration: 10
+		bullet: {
+            type: shrapnelBulletType
+            lifetime: 10
+            damage: 30
+            serrations: 4
+            serrationSpacing: 9
+            serrationLenScl: 10
+            serrationWidth: 3
+            hitLarge: true
+            fromColor: abb3b3
+            toColor: e8eded
+            length: 70
+            width: 8
+            hitEffect: blastExplosion
+            shootEffect: blastExplosion
+            pierce: true
+            smokeEffect: hitBulletBig
+                }
+	              }
+    ]
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 3CA370FF
+        colorTo: 3D6E70FF
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 1.5
+        lightOpacity: 1.5
+        spin: 0
+        sizeFrom: 1
+        sizeTo: 0 
+        offset: 0
+        lightScl: 1.5
+        lightOpacity: 2
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000010
+        y : 0
+        x : -11
+    }
+]
+
+research: {
+      parent: monument
+       requirements: [
+         greenwe/8000
+         metal/5000
+         superCoal/6000
+         uran/800
+         nanoMatherial/100
+  ]
+ }
+}

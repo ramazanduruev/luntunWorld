@@ -1,0 +1,4 @@
+variants: 1
+  itemDrop: magma
+  name: magma ore
+  type: OreBlock

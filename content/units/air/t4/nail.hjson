@@ -1,0 +1,136 @@
+type: flying
+flying: true
+speed: 1.2
+health: 1430
+armor: 8
+range: 140
+drag: 0.1
+accel: 0.8
+hitSize: 25
+rotateSpeed: 3
+outlineColor: 171720FF
+outlineRadius: 4
+engineSize : 3
+engineOffset : 4
+
+weapons: [
+{
+        x: 0
+        y: 0
+        reload: 210
+        rotate: true
+        mirror: false
+        alternate: true
+        shootSound: shootCollaris
+        loopSound: fire-wall
+        shootSoundVolume: 0.6
+        shake: 3
+        targetSwitchInterval: 25
+        targetInterval: 15
+        cooldownTime: 200
+        continuous: true
+        rotationLimit: 16
+        name: nail-weapon
+        bullet: {
+            type: ContinuousLaserBulletType
+            largeHit: false
+            drawSize: 170
+            maxRange: 160
+            length: 160
+            width: 3
+            lifetime: 90
+            damage: 18
+            incendChance: 0.03
+            incendSpread: 4
+            incendAmount: 2
+            smokeEffect: none
+            
+}
+}
+  {
+    x: 14
+    y: 0
+    name: trigon-weapon
+    reload: 90
+    mirror: true
+    rotate: false
+    shootSound: shoot-big-artillery
+    bullet: {
+      instantDisappear: true
+      damage: 0
+      spawnUnit: ln-miniRocket
+    }
+  }
+]
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: unitRegeneration
+    reload: 2800
+    parentizeEffects: true
+    x: 0
+    y: -18
+    activeEffect: {
+      followParent: false
+      rotWithParent: false
+      particles: 1
+      lifetime: 200
+      length: 0
+      region: ln-nail-rotator
+      sizeFrom: 4
+      sizeTo: 4
+      spin: 3
+      layer: 95.1
+    }
+  }
+  {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 3CA370FF
+        colorTo: 3D6E70FF
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 4
+        lightOpacity: 4
+        spin: 0
+        sizeFrom: 4
+        sizeTo: 0 
+        offset: 0
+        lightScl: 2
+        lightOpacity: 3
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000001
+        y : -10
+        x : 0
+    }
+]
+
+engines: [
+  {
+    x: -8
+    y: -22
+    radius: 3
+    rotation: -45
+  }
+  {
+    x: 8
+    y: -22
+    radius: 3
+    rotation: 0
+  }
+]
+research: {
+      parent: ceramic
+       requirements: [
+         greenwe/43600
+         metal/48880
+         gold/45000
+         powerPlate/32000
+         hotGraphite/13320
+         ancientStone/3000
+  ]
+ }

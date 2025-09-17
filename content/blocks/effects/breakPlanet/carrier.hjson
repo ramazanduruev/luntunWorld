@@ -1,0 +1,21 @@
+{
+  health: 240
+  type: launchPad
+  category: effect
+  research: {
+    parent: resourceThrower
+    requirements: [
+     drawingTierOne/60
+     drawingTierTwo/10
+     drawingTierThree/30
+    ]
+  }
+  requirements: [
+   tuntium/400
+   cintrium/120
+   quartzCrystal/40
+  ]
+  size: 2
+  itemCapacity: 60
+  launchTime: 600
+}

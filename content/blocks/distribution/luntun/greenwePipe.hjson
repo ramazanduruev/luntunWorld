@@ -1,0 +1,26 @@
+  type: Duct
+drawTeamOverlay: false
+update: true
+hasItems: true
+itemCapacity: 2
+isDuct: true
+underBullets: true
+  category: distribution
+  speed: 4
+  displayedSpeed: 1   
+  junctionReplacement: greenweCrossroad
+  bridgeReplacement: greenweBridge
+  health: 5
+  acceptsItems: true
+  requirements: [
+    greenwe/2
+]
+
+researchCostMultiplier: 0.3
+research: {
+parent: colonia
+planet: luntun
+ requirements: [
+    greenwe/10
+]
+}

@@ -1,0 +1,27 @@
+type: ForceProjector
+size: 2
+squareSprite: false
+shieldHealth: 120
+category: effect
+baseColor: d94848
+requirements: [
+cintrium/10
+quartzCrystal/20
+]
+consumes: {
+  power: 1
+  }
+radius: 50
+researchCostMultiplier: 0.5
+phaseRadiusBoost: 50
+phaseShieldBoost: 140
+phaseUseTime: 400
+sides: 4
+shieldRotation: 45
+research: {
+      parent: center
+       requirements: [
+       drawingTierOne/60
+       drawingTierTwo/20
+  ]
+}

@@ -1,0 +1,71 @@
+type: flying
+speed: 0
+flying: true
+health: 9999
+armor: 2
+hitSize: 1
+outlineRadius: 1
+engineOffset : -1.5
+canDrown: false
+engineSize : 0
+useEngineElevation : false
+accel : 0.4
+shadowElevation : 0.2
+targetable: false
+hittable: false
+range: 10
+
+weapons: [
+{
+name: none
+x: 0
+y: 0
+rotate: false
+rotateSpeed: 6
+reload: 2100
+recoil: 1 
+shootSound: lasershoot
+inaccuracy: 360
+alternate: false
+mirror: false
+ejectEffect: none
+alwaysShooting: true
+bullet: {
+type: BasicBulletType
+length: 20
+width: 20
+sprite: ln-normalAsteroidBullet
+speed: 0.4
+damage: 90
+lifetime: 99999
+backColor: 98ffa9
+frontColor: ffffff
+}
+}
+{
+name: none
+x: 0
+y: 0
+rotate: false
+rotateSpeed: 6
+reload: 3900
+recoil: 1 
+shootSound: lasershoot
+inaccuracy: 360
+alternate: false
+mirror: false
+ejectEffect: none
+alwaysShooting: true
+bullet: {
+type: BasicBulletType
+length: 20
+width: 20
+sprite: ln-normalAsteroidBulletD
+speed: 0.3
+damage: 200
+lifetime: 99999
+backColor: 98ffa9
+frontColor: ffffff
+}
+}
+]

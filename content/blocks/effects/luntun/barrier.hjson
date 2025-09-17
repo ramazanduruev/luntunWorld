@@ -1,0 +1,30 @@
+type: ForceProjector
+size: 2
+squareSprite: false
+shieldHealth: 480
+cooldownNormal: 1.75
+cooldownBrokenBase: 0.35
+coolantConsumption: 0.1
+category: effect
+requirements: [
+metal/200
+gold/20
+powerPlate/40
+]
+consumes: {
+  power: 3
+  }
+radius: 90
+researchCostMultiplier: 0.5
+phaseRadiusBoost: 80
+phaseShieldBoost: 400
+phaseUseTime: 180
+sides: 4
+shieldRotation: 45
+research: {
+      parent: regenerator
+       requirements: [
+       gold/2000
+       uran/200
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  type: conduit
+  category: liquid
+  health: 15
+  liquidPressure: 2
+  bridgeReplacement: liquidBridge
+  requirements: [
+    metal/8
+   ]
+research: {
+      parent: airTrap
+       requirements: [
+       greenwe/100
+       metal/40
+  ]
+ }
+}

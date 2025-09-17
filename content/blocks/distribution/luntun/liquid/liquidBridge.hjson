@@ -1,0 +1,17 @@
+{
+  type: LiquidBridge
+  health: 30
+  hasPower: false
+  range: 4
+  liquidPressure: 4
+  requirements: [
+    metal/20
+  ]
+  category: liquid
+  research: {
+      parent: liquidPipe
+       requirements: [
+         greenwe/300
+  ]
+ }
+}

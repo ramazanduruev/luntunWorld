@@ -1,0 +1,61 @@
+
+type: RegenProjector
+size: 2
+range: 2
+baseColor: 85c278
+squareSprite: false
+drawTeamOverlay: false
+health: 1000
+effect: {
+  type: ParticleEffect
+  colorFrom: 85c278
+  colorTo: 69a25e
+  particles: 5
+  line: true
+  length: 1
+  baseLength: 1
+  strokeFrom: 0.6
+  strokeTo: 1.6
+  lifetime: 90
+  cone: 360
+  interp: pow2
+  sizeInterp: pow2Out
+}
+consumes: {
+
+}
+optionalUseTime: 180
+healPercent: 0.04
+requirements: [
+]
+category: defense
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawPulseShape
+      square: true
+      color: 85c278
+      layer: 110
+    }
+  ]
+} 
+researchCostMultiplier: 0.5
+
+requirements: [
+      greenwe/28
+      metal/16
+  ]
+
+research: {
+      parent: repairWall
+       requirements: [
+       greenwe/10000
+       metal/16000
+       powerPlate/2200
+       nanoMatherial/100
+  ]
+}

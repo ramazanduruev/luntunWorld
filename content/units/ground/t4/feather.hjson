@@ -1,0 +1,118 @@
+type: tank
+hitSize: 38
+"template": "ErekirUnitType",
+treadPullOffset: 4
+omniMovement: false
+faceTarget: false
+crushDamage: 6
+outlineColor: 44413c
+speed: 0.8
+rotateSpeed: 1.2
+health: 2200
+armor: 10
+itemCapacity: 0
+outlineColor: 171720FF
+outlineRadius: 4
+immunities: [burning
+]
+treadRects: [
+    {
+        x: -85,
+        y: -69,
+        width: 170,
+        height: 164
+    }
+]
+weapons: [
+       {
+name: feather-weapon1
+		reload: 180
+		x: 0
+		y: 0
+		mirror: false
+		rotate: true
+		rotateSpeed: 1.2
+  shootSound: shootLancer
+		bullet: {
+            type: shrapnelBulletType
+            lifetime: 20
+            damage: 220
+            serrations: 6
+            serrationSpacing: 12
+            serrationLenScl: 24
+            serrationWidth: 8
+            hitLarge: true
+            fromColor: abb3b3
+            toColor: e8eded
+            length: 180
+            width: 24
+            hitEffect: blastExplosion
+            shootEffect: blastExplosion
+            pierce: true
+            smokeEffect: hitBulletBig
+                }
+	              }
+      {
+      name: feather-weapon2
+      x: -12
+      y: -6
+      reload: 20
+      shootSound: shootElude
+      rotate: true
+      mirror: false
+      chargeSound: lasercharge2
+      alternate: false
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 40
+        damage: 12
+        pierce: true
+        pierceCap: 1
+        buildingDamageMultiplier: 0.3
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+       {
+      name: feather-weapon3
+      x: 12
+      y: -6
+      reload: 20
+      shootSound: shootElude
+      rotate: true
+      mirror: false
+      chargeSound: lasercharge2
+      alternate: false
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 40
+        damage: 12
+        pierce: true
+        pierceCap: 1
+        buildingDamageMultiplier: 0.3
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+      ]
+research: {
+parent: runner
+requirements: [
+         greenwe/30000
+         metal/8340
+         powerPlate/4900
+         nanoMatherial/18830
+         closedSoul/66
+  ]
+objectives: [
+{
+type: SectorComplete
+preset: TierFour
+  }
+ ]
+}
+researchCostMultiplier: 1.5

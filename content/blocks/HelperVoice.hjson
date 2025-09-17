@@ -1,0 +1,16 @@
+type: ConsumeGenerator
+size: 1
+health: 1
+squareSprite: false
+BuildVisibility: false
+requirements: [
+
+]
+consumes: {
+
+}
+category: logic
+itemDuration: 3600
+outlineColor: 2C2A36
+ambientSound: HelperVoice
+ambientSoundVolume: 500

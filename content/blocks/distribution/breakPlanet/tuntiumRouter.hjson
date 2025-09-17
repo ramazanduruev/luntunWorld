@@ -1,0 +1,19 @@
+
+type: Router
+category: distribution
+health: 15
+size: 1
+capacity: 1
+
+requirements: [
+    tuntium/20
+]
+
+researchCostMultiplier: 0.3
+research: {
+      parent: resourceThrower
+      planet: breakPlanet
+       requirements: [
+         tuntium/10
+  ]
+ }

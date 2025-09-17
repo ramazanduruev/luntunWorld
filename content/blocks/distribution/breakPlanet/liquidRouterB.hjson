@@ -1,0 +1,17 @@
+{
+  type: LiquidRouter
+  health: 15
+  hasPower: false
+  placeableLiquid: true
+  liquidPressure: 10
+  requirements: [
+  quartzCrystal/15
+  ]
+       category: liquid
+       research: {
+        parent: liquidBridgeB
+        requirements: [
+        drawingTierThree/15
+  ]
+ }
+}

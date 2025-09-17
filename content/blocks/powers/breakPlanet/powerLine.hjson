@@ -1,0 +1,28 @@
+type: BeamNode
+squareSprite: false
+hasPower: true
+allowDiagonal: true
+consumesPower: true
+outputsPower: true
+consumes: {
+  powerBuffered: 50
+}
+drawDisabled: false
+underBullets: true
+size: 1
+health: 10
+range: 8
+laserColor1: 9ECAD0FF
+laserColor2: 65A3ACFF   
+category: power
+requirements: [
+    tuntium/10
+  ]
+category: power
+research: {
+root: false
+    name: breakPlanet
+    planet: breakPlanet
+parent: bigSolarPanel
+}
+researchCostMultiplier: 0.25

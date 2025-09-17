@@ -1,0 +1,28 @@
+type: GenericCrafter
+size: 2
+category: crafting
+requirements: [
+ greenwe/60
+ metal/120
+ gold/20
+]
+consumes: {
+  power: 1
+  items: [
+  metal/2
+  magma/1
+  ]
+}
+craftTime: 120
+
+craftEffect: smeltsmoke
+outputItem: powerPlate/1
+research: {
+    planet: luntun
+	parent: airTrap
+	requirements: [
+	greenwe/1000
+ metal/800
+ gold/600
+	]
+}

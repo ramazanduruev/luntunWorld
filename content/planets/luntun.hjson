@@ -1,0 +1,76 @@
+generator: PlanetGenerator
+parent: 1-blackHole
+iconColor: A69E9EFF
+orbitRadius: 68
+hasAtmosphere: true
+updateLighting: true
+atmosphereRadIn: 0.03
+atmosphereRadOut: 0.3
+atmosphereColor: 3D6E70FF
+drawOrbit: false
+solarSystem: 1-blackHole
+accessible: true 
+alwaysUnlocked: true
+defaultCore: "colonia"
+sectorSeed: 0
+startSector: 0
+sectorSize: 2
+
+clearSectorOnLose: true
+allowSectorInvasion: false
+allowLaunchToNumbered: false
+
+cloudMesh: {
+  type: HexSkyMesh
+  planet: luntun
+  seed: 2
+  speed: 3
+  radius: 0.06
+  divisions: 5
+  color: FFFFFFFF
+  octaves: 2
+  persistence: 1
+  scl: 2
+  thresh: 0.45
+}
+
+mesh: {
+    type: NoiseMesh
+    planet: luntun
+    seed: 88009
+    color1: 3D6E70FF
+    color2: A4CC56FF
+    divisions: 5
+    radius: 0.8
+    octaves: 8
+    persistence: 1.3
+    scl: 0.75
+    mag: 1.2
+}
+
+hiddenItems: [
+    "copper"
+    "lead"
+    "scrap"
+    "graphite"
+    "coal"
+    "titanium"
+    "thorium"
+    "silicon"
+    "plastanium"
+    "phase-fabric"
+    "surge-alloy"
+    "spore-pod"
+    "blast-compound"
+    "pyratite"
+    "metaglass"
+    "beryllium"
+    "oxide"
+    "tungsten"
+    "carbide"
+    "fissile-matter"
+    "dormant-cyst"
+]
+ itemWhiteList: [
+ 
+ ]

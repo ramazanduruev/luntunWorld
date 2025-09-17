@@ -1,0 +1,15 @@
+{
+	description: coal have flammability 100%
+	color: 151515FF
+	hardness: 1
+    research: radioactiveCoal
+	charge: 0
+	explosiveness: 0
+	flammability: 1
+	radioactivity: 0
+	cost: 3.5
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

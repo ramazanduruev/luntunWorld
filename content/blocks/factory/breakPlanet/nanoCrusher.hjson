@@ -1,0 +1,53 @@
+type: GenericCrafter
+size: 4
+itemCapacity: 40
+category: crafting
+requirements: [
+ tuntium/120
+ cintrium/90
+ quartzCrystal/10
+]
+consumes: {
+  power: 2
+  items: [
+  quartzCrystal/8
+  ]
+}
+  outputItems: [
+    tuntium/1
+    cintrium/1
+  ]
+craftTime: 60
+
+  drawer: {
+      type: DrawMulti
+      drawers: [	 
+        {
+    type: DrawRegion
+    suffix: -bottom
+    layerOffset: -0.002
+    }
+       {
+		  type: DrawRegion
+		  suffix: -rotator
+		  spinSprite: true
+		  rotateSpeed: 6
+    x: 0
+    y: 0
+    layerOffset: -0.001
+		  }
+		  {
+		  type: DrawDefault
+		  }
+      ]
+    }
+craftEffect: teleportActivate
+effectChance: 0.8
+research: {
+parent: center
+planet: breakPlanet
+requirements: [
+ drawingTierTwo/60
+ drawingTierThree/20
+	]
+}

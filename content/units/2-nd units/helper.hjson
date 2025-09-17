@@ -1,0 +1,83 @@
+type: flying
+health: 60
+controller: minerAI
+alwaysUnlocked: false
+isEnemy: true
+flying: true
+accel: 0.04
+drag: 0.12
+speed: 4
+rotateSpeed: 4
+armor: 1
+outlineColor: 111424FF
+engineSize : 0
+engineOffset : 1.5
+buildSpeed: 4
+mineSpeed: 4
+mineTier: 1
+
+weapons: [
+    {
+      name: none
+      x: 0
+      y: 0
+      reload: 48
+      shootSound: mud
+      rotate: false
+      mirror: false
+      chargeSound: shootSap
+      alternate: false
+      shootStatus: omegaShield
+      shootStatusDuration: 40
+      canAttack: false
+      canHeal: true
+      bullet: {
+        type: LiquidBulletType
+        liquid: water
+        speed: 5
+        lifetime: 40
+        damage: 0
+        pierce: true
+        pierceCap: 2
+        healPercent: 0.8
+        collidesTeam: true
+        buildingDamageMultiplier: 0.1
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+    ]
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 353C54FF
+        colorTo: 3D6E70FF
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 1
+        lightOpacity: 1
+        spin: 0
+        sizeFrom: 1
+        sizeTo: 0 
+        offset: 0
+        lightScl: 0.8
+        lightOpacity: 1
+        }
+        type : MoveEffectAbility
+        minVelocity: 0 
+        interval: 0.0000001
+        y : 2.1
+        x : 0
+    }
+]
+
+research: {
+      parent: tOneSoul
+       requirements: [
+         greenwe/33333
+         metal/33333
+  ]
+ }

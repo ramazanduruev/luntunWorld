@@ -1,0 +1,15 @@
+captureWave: 10
+planet: luntun
+sector: 10
+research: colonia
+difficulty: 3
+alwaysUnlocked: false
+research: {
+parent: soulSector
+objectives: [
+{
+type: SectorComplete
+preset: soulSector
+  }
+ ]
+}

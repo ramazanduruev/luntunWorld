@@ -1,0 +1,47 @@
+{
+type: mech
+speed: 0
+hitSize: 20
+health: 99999
+mechSideSway: 0.25
+outlineColor: 272736FF
+weapons: [
+    {
+      name: none
+      x: 0
+      y: 0
+      reload: 48
+      shootSound: mud
+      rotate: false
+      mirror: false
+      chargeSound: mud
+      alternate: false
+      shootStatus: omegaShield
+      shootStatusDuration: 60
+      canAttack: false
+      canHeal: true
+      alwaysShooting: true
+      bullet: {
+        type: LiquidBulletType
+        liquid: water
+        speed: 0.4
+        lifetime: 8
+        damage: 0
+        pierce: true
+        pierceCap: 2
+        healPercent: 0.1
+        collidesTeam: true
+        buildingDamageMultiplier: 0.1
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+    ]
+abilities: [
+  {
+  type: SpawnDeathAbility
+  unit: killerZ223
+  amount: 1
+  }
+]
+}
