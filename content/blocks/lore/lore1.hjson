@@ -1,0 +1,21 @@
+type: MessageBlock
+name: lore 1
+description: first mission \/ первая миссия
+size: 1
+requirements: [
+ 
+]
+category: logic
+research: {
+      parent: UbaseColonia
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: tutorial
+  }
+ ]
+  }

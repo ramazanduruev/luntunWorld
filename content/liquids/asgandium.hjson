@@ -1,0 +1,11 @@
+  gas: false
+  description: asgandium
+  color: 322947FF
+  flammability: 0.1
+  viscosity: 0
+  explosiveness: 0
+  lightColor: 473B78FF
+  heatCapacity: 0
+  temperature: 0
+  coolant: true
+research: air

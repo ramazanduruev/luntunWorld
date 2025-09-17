@@ -1,0 +1,40 @@
+{
+type: mech
+speed: 1
+hitSize:12
+health: 150
+mechSideSway: 0.25
+weapons: [
+    {
+      name: fire-weapon
+      x: -7
+      y: 0
+      reload: 10
+      shootSound: flame
+      rotate: false
+      mirror: true
+      chargeSound: lasercharge2
+      alternate: false
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 35
+        damage: 8
+        pierce: true
+        pierceCap: 2
+        buildingDamageMultiplier: 1.2
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+    ]
+
+research: {
+      parent: tOne
+       requirements: [
+         greenwe/80
+         metal/300
+  ]
+ }
+}

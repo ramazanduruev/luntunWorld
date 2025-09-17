@@ -1,0 +1,107 @@
+type: naval
+speed: 0.2
+health: 6100
+armor: 3
+range: 440
+drag: 0.1
+accel: 0.8
+hitSize: 50
+rotateSpeed: 2.5
+outlineColor: 0C0E29
+outlineRadius: 5
+weapons: [
+    {
+      name: destroyer-weapon2
+      x: -4
+      y: -8
+      reload: 40
+      shootSound: flame
+      rotate: true
+      mirror: true
+      chargeSound: lasercharge2
+      alternate: false
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 3.8
+        lifetime: 110
+        damage: 40
+        pierce: true
+        pierceCap: 2
+        buildingDamageMultiplier: 0.9
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+      shoot: {
+      barrels: [
+      -6, -0.75, 0,
+      -2, 0.25, 0 
+      2, 0.25, 0, 
+      6, -0.75, 0]
+      type: ShootBarrel
+      shots: 4
+      shotDelay: 4
+      }
+     }
+    {
+		name: destroyer-weapon1
+		reload: 60
+		x: 0
+		y: 0
+		mirror: false
+		rotate: true
+		rotateSpeed: 3
+  shootSound: railgun
+		bullet: {
+            type: shrapnelBulletType
+            lifetime: 20
+            damage: 80
+            serrations: 6
+            serrationSpacing: 16
+            serrationLenScl: 20
+            serrationWidth: 5
+            hitLarge: true
+            fromColor: abb3b3
+            toColor: e8eded
+            length: 140
+            width: 8
+            hitEffect: blastExplosion
+            shootEffect: blastExplosion
+            pierce: true
+            smokeEffect: hitBulletBig
+                }
+	              }
+              ]
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: FEFF70FF
+        colorTo: ECEC68FF
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 1.7
+        lightOpacity: 1.7
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        offset: 0
+        lightScl: 1.5
+        lightOpacity: 2
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000010
+        y : -6.2
+        x : 0
+    }
+]
+abilities: [
+  {
+  type: SpawnDeathAbility
+  unit: artik
+  amount: 10
+  }
+]

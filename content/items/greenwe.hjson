@@ -1,0 +1,15 @@
+{
+	description: greenwe your first resource
+	color: 3D6E70FF
+hardness: 1
+    research: colonia
+	charge: 0.0
+	explosiveness: 0
+	flammability: 0
+	radioactivity: 0
+	cost: 3.5
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

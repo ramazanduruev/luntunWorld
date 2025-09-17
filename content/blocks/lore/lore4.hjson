@@ -1,0 +1,21 @@
+type: MessageBlock
+name: lore 4
+description: Drone A123 mined magma for powerPlate \/ Дрон А123 добывал магму для электро плиты
+size: 1
+requirements: [
+ 
+]
+category: logic
+research: {
+      parent: lore3
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: lavaOcean
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+type: MessageBlock
+name: destroyer(boss)
+description: The destroyer was created to catch fish but it was recreated and improved \/ уничтожитель он был создан для отлова рыбы но его успели пересоздать и улучшить 
+size: 1
+requirements: [
+ 
+]
+category: logic
+research: {
+      parent: UbaseColonia
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: labyrinth
+  }
+ ]
+}

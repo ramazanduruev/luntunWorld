@@ -1,0 +1,41 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+category: crafting
+requirements: [
+ metal/60
+ gold/10
+]
+consumes: {
+  power: 1.4
+  items: [
+  metal/1
+  ]
+  liquids: [
+  air/0.1
+  ]
+}
+craftTime: 260
+drawer: {
+  type: DrawMulti
+  drawers: [
+		  {
+		  type: DrawDefault
+		  }
+   {
+    type: DrawFlame
+    flameRadius: 2        
+    flameRadiusIn: 1
+    flameRadiusScl: 1.4
+    flameRadiusMag: 1
+    flameRadiusInMag: 1
+	flameColor: f0feffe2
+   }
+  ]
+ }         
+craftEffect: smeltsmoke
+outputLiquid: asgandium/0.1
+research: {
+parent: airTrap
+planet: luntun
+}

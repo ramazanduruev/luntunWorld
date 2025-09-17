@@ -1,0 +1,11 @@
+  gas: true
+  description: air
+  color: ECECECFF
+  flammability: 0
+  viscosity: 0
+  explosiveness: 0
+  lightColor: ECECECFF
+  heatCapacity: 0
+  temperature: 0
+  coolant: true
+research: colonia

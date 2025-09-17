@@ -1,0 +1,9 @@
+type: Floor
+variants: 1
+
+isLiquid: true
+liquidDrop: air
+
+speedMultiplier: 0.85
+drownTime: 150
+cacheLayer: water

@@ -1,0 +1,4 @@
+type: floor,
+name: WhiteFlorr,
+variants: 3,
+wall: goldWalls

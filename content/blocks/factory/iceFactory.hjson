@@ -1,0 +1,46 @@
+	type: GenericCrafter
+	category: crafting
+	size: 2
+	hasLiquid: true
+	liquidCapacity: 120
+	requirements: [
+	 greenwe/60
+  metal/40
+  powerPlate/20
+    ]	
+    outputItem: ice/1
+    craftTime: 40
+	consumes: {
+		power: 1
+		liquid: air/0.3
+	  }
+
+	research: {
+	parent: airTrap
+	planet: luntun
+	}
+	drawer: {
+      type: DrawMulti
+      drawers: [	  
+          {
+          type: DrawRegion
+		  suffix: -bottom
+          }
+		  {
+          type: DrawLiquidTile
+          drawLiquid: air
+          padding: 0.75
+          }
+       {
+		  type: DrawRegion
+		  suffix: -rotator
+		  spinSprite: true
+		  rotateSpeed: 2
+    x: 0
+    y: 0
+		  }
+		  {
+		  type: DrawDefault
+		  }
+      ]
+    }
