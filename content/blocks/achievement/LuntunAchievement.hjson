@@ -1,0 +1,22 @@
+type: MessageBlock
+name: start
+description: first achievement
+size: 1
+BuildVisibility: false
+requirements: [
+closedSoul/999999
+]
+category: logic
+research: {
+      parent: colonia
+      planet: luntun
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: tutorial
+  }
+ ]
+  }

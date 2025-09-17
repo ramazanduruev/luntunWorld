@@ -1,0 +1,9 @@
+
+captureWave: 0
+planet: breakPlanet
+sector: 0
+difficulty: 0
+alwaysUnlocked: false
+research: {
+parent: omegaGreenwePlus
+}

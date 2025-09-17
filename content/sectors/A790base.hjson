@@ -1,0 +1,15 @@
+captureWave: 9
+planet: luntun
+sector: 4
+research: colonia
+difficulty: 4
+alwaysUnlocked: false
+research: {
+parent: lavaOcean
+objectives: [
+{
+type: SectorComplete
+preset: lavaOcean
+  }
+ ]
+}

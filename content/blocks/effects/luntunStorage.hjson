@@ -1,0 +1,20 @@
+{
+
+type: StorageBlock
+itemCapacity: 120
+hasItems: true
+health: 120
+size: 2
+requirements: [
+greenwe/60
+metal/20
+hotGraphite/10
+]
+category: effect
+research: {
+      parent: regenerator
+       requirements: [
+       hotGraphite/500
+  ]
+ }
+}

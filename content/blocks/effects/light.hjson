@@ -1,0 +1,27 @@
+type: LightBlock
+
+health: 20
+size: 1
+requirements: [
+metal/12
+gold/5
+ ]
+category: effect
+research: {
+      parent: regenerator
+       requirements: [
+         greenwe/200
+         metal/100
+         gold/40
+  ]
+ }
+
+squareSprite: false
+brightness: 0.9
+radius: 90
+
+consumes: {
+  power: 0.3
+}
+
+researchCostMultiplier: 0.8
