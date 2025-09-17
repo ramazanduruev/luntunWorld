@@ -1,0 +1,23 @@
+type: MessageBlock
+name: Boss2
+description: teleported soul / телепортируйте душу
+size: 1
+alwaysUnlocked: false
+BuildVisibility: false
+requirements: [
+closedSoul/999999
+]
+category: logic
+research: {
+      parent: LuntunBossAchievement
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: soulSector
+  }
+ ]
+  }

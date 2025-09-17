@@ -1,0 +1,9 @@
+
+captureWave: 12
+planet: breakPlanet
+sector: 37
+difficulty: 0
+alwaysUnlocked: false
+research: {
+parent: cintriumAsteroid
+}

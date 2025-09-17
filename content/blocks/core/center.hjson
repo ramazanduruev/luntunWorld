@@ -1,0 +1,23 @@
+type:CoreBlock
+category: effect
+health: 1200
+size: 3
+
+itemCapacity: 1600
+unitCapModifier: 8
+unitType: "observer"
+incinerateNonBuildable: true
+isFirstTier: true
+squareSprite: false
+
+requirements: [
+    tuntium/900
+]
+
+research: {
+    root: true
+    name: breakPlanet
+    planet: breakPlanet
+}
+alwaysUnlocked: true
+

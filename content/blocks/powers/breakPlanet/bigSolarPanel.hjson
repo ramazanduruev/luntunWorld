@@ -1,0 +1,21 @@
+{
+  type: SolarGenerator
+  health: 60
+  size: 2
+  hasPower: true
+  hasLiquids: false
+  powerProduction: 0.3
+  requirements: [
+    {
+      item: cintrium
+      amount: 16
+    }
+  ]
+  category: power
+  research: {
+      parent: center
+        requirements: [
+        tuntium/85
+     ]
+   }
+}

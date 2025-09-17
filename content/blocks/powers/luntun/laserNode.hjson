@@ -1,0 +1,28 @@
+type: BeamNode
+squareSprite: false
+hasPower: true
+allowDiagonal: true
+consumesPower: true
+outputsPower: true
+consumes: {
+  powerBuffered: 1250
+}
+drawDisabled: false
+underBullets: true
+size: 1
+health: 5
+range: 7
+laserColor1: 3CA370FF
+laserColor2: 3D6E70FF          
+category: power
+requirements: [
+    greenwe/10
+  ]
+category: power
+research: {
+root: false
+    name: luntun
+    planet: luntun
+parent: solarPanel
+}
+researchCostMultiplier: 0.25

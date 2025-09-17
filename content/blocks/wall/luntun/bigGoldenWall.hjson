@@ -1,0 +1,16 @@
+{
+  type: wall
+  health: 800
+  size: 2
+  drawTeamOverlay: false
+  requirements:[
+  gold/24
+  ]
+  research: {
+      parent: goldenWall
+       requirements: [
+         gold/700
+   ]
+  }
+  category: defense
+}

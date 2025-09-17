@@ -1,0 +1,41 @@
+type: ThermalGenerator
+squareSprite: false
+
+size: 3
+attribute: water
+displayEfficiencyScale: 1
+minEfficiency: 0.0001
+powerProduction: 0.4
+displayEfficiency: true
+generateEffect: sapped
+effectChance: 0.01
+category: power
+research: {
+      parent: bigSolarPanel
+       requirements: [
+       drawingTierTwo/10
+       drawingTierThree/40
+  ]
+ }
+requirements: [
+  tuntium/60
+]
+ambientSound: hum
+ambientSoundVolume: 0.07
+drawer: {
+  type: DrawMulti
+  drawers: [
+   {
+      type: DrawDefault
+   }
+   {
+      type: DrawBlurSpin
+      suffix: -rotator
+      rotateSpeed: 7.2
+      blurThresh: 0.02
+   }
+ ]
+}
+hasLiquids: true
+outputLiquid: water/0.06
+fogRadius: 2.7

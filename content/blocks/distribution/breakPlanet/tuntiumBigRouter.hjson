@@ -1,0 +1,19 @@
+
+type: Router
+category: distribution
+health: 40
+size: 2
+capacity: 6
+
+requirements: [
+    tuntium/40
+]
+
+researchCostMultiplier: 0.3
+research: {
+      parent: tuntiumRouter
+      planet: breakPlanet
+       requirements: [
+         tuntium/60
+  ]
+ }

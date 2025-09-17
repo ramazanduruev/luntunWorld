@@ -1,0 +1,16 @@
+type: ParticleWeather
+localizedName: bloodRain
+name: bloodRain
+color: EE091FFF
+noiseColor: E8735EFF
+particleRegion: particle
+sizeMax: 20
+sizeMin: 2
+density: 1000
+useWindVector: true
+drawNoise: true
+opacityMultiplier: 0.7
+baseSpeed: 2
+soundVol: 0.53
+force: 1.8
+status: attackSpeed

@@ -1,0 +1,67 @@
+{
+  controller: SuicideAI
+  type: flying
+  armor: 3
+  speed: 1.2
+  hitSize: 9
+  flying: true
+  health: 90
+  range: 30
+
+  weapons: 
+  [
+    {
+    name: none
+    reload: 30
+    shootCone: 180
+    ejectEffect: none
+    shootSound: explosion
+    bullet: 
+      {
+      type: BombBulletType
+      lightningColor: FFFFA3FF
+      lightning: 3
+      lightningDamage: 12
+      lightningLength: 8
+      lightningCone: 360
+      lightningLengthRand: 6
+      hitEffect: pulverize
+      lifetime: 10
+      speed: 1
+      splashDamageRadius: 30
+      instantDisappear: true
+      splashDamage: 110
+      killShooter: true
+      hittable: false
+      collidesAir: true
+       }
+    }
+  ]
+abilities: [
+  {
+    type: StatusFieldAbility
+    effect: none
+    reload: 15
+    parentizeEffects: true
+    layerOffset: -0.01
+    activeEffect: {
+      followParent: true
+      rotWithParent: true
+      particles: 1
+      lifetime: 20
+      length: 0
+      region: ln-needle-rotator
+      sizeFrom: 10
+      sizeTo: 10
+      spin: 10
+      layer: 95.1
+    }
+  }
+]
+  outlineColor: 171720FF
+  outlines: true
+  outlineRadius: 3
+}
+
+
+

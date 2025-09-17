@@ -1,0 +1,64 @@
+type: mech
+  mechSideSway: 0.25
+  armor: 1
+  speed: 0.1
+  hitSize: 9
+  flying: false
+  health: 100
+  range: 120
+  outlineColor: 3d3d3a
+  outlineRadius: 2
+weapons: [
+    {
+      name: none
+      x: 0
+      y: 0
+      reload: 60
+      shootSound: flame
+      rotate: true
+      mirror: true
+      chargeSound: lasercharge2
+      alternate: false
+      shootStatus: unmoving
+      shootStatusDuration: 9999
+      alwaysShooting: true
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 35
+        damage: 20
+        pierce: true
+        pierceCap: 1
+        buildingDamageMultiplier: 1
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+       }
+      }
+      {
+      name: miniAttacker-weapon1
+      x: 0
+      y: 0
+      reload: 60
+      shootSound: flame
+      rotate: true
+      mirror: true
+      chargeSound: lasercharge2
+      alternate: false
+      shootStatus: burning
+      shootStatusDuration: 9999
+      alwaysShooting: true
+      bullet: {
+        type: LiquidBulletType
+        liquid: water
+        speed: 0.1
+        lifetime: 1
+        damage: 1
+        pierce: true
+        pierceCap: 1
+        buildingDamageMultiplier: 0.8
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+    ]

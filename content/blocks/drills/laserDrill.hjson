@@ -1,0 +1,36 @@
+type: BeamDrill
+description: clones resources from walls
+tier: 2
+drillTime: 310
+size: 2
+range: 6
+hasPower: true
+updateEffect: pulverizeRed
+updateEffectChance: 0.03
+drillEffect: mineHuge
+rotateSpeed: 6
+warmupSpeed: 0.01
+itemCapacity: 10
+liquidBoostIntensity: 1.1
+consumes: {
+  power: 0.40
+  liquid: {
+    liquid: air
+    amount: 0.001
+    booster: true
+    optional: true
+  }
+}
+category: production
+requirements: [
+  greenwe/60
+]
+research: {
+    root: false
+    name: luntun
+    planet: luntun
+      parent: landDrill
+       requirements: [
+       greenwe/10
+  ]
+ }

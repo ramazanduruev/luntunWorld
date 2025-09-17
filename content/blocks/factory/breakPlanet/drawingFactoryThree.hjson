@@ -1,0 +1,77 @@
+type: GenericCrafter
+size: 3
+itemCapacity: 50
+category: crafting
+requirements: [
+ tuntium/260
+ cintrium/200
+ quartzCrystal/60
+]
+consumes: {
+  power: 1
+  items: [
+  quartzCrystal/8
+  drawingTierTwo/1
+  ]
+}
+craftTime: 140
+
+  drawer: {
+      type: DrawMulti
+      drawers: [	 
+        {
+    type: DrawRegion
+    suffix: -bottom
+    layerOffset: -0.002
+    }
+       {
+		  type: DrawRegion
+		  suffix: -rotator
+		  spinSprite: true
+		  rotateSpeed: 4
+    x: 6.8
+    y: 6.8
+    layerOffset: -0.001
+		  }
+    {
+		  type: DrawRegion
+		  suffix: -rotatorTwo
+		  spinSprite: true
+		  rotateSpeed: 4
+    x: -6.8
+    y: 6.8
+    layerOffset: -0.001
+		  }
+    {
+		  type: DrawRegion
+		  suffix: -rotatorThree
+		  spinSprite: true
+		  rotateSpeed: 4
+    x: -6.8
+    y: -6.8
+    layerOffset: -0.001
+		  }
+    {
+		  type: DrawRegion
+		  suffix: -rotator
+		  spinSprite: true
+		  rotateSpeed: 4
+    x: 6.8
+    y: -6.8
+    layerOffset: -0.001
+		  }
+		  {
+		  type: DrawDefault
+		  }
+      ]
+    }
+craftEffect: redgeneratespark
+outputItem: drawingTierThree/1
+research: {
+parent: drawingFactoryTwo
+planet: breakPlanet
+requirements: [
+	drawingTierOne/160
+ drawingTierTwo/80
+	]
+}

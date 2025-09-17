@@ -1,0 +1,23 @@
+{
+type: ShockMine
+hasShadow: true
+health: 20
+damage: 5
+tileDamage: 5
+lenght: 10
+tendrils: 2
+size: 1
+requirements: [
+metal/6
+powerPlate/2
+]
+category: effect
+research: {
+      parent: monster
+       requirements: [
+       metal/400
+       powerPlate/200
+       nanoMatherial/10
+  ]
+ }
+}

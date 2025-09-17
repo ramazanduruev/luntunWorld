@@ -1,0 +1,14 @@
+{
+	color: 433D48FF
+hardness: 1
+research: tuntium
+	charge: 0.0
+	explosiveness: 0.1
+	flammability: 0
+	radioactivity: 0
+	cost: 3.5
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

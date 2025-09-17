@@ -1,0 +1,19 @@
+
+type: Router
+category: distribution
+health: 15
+size: 1
+capacity: 2
+
+requirements: [
+    greenwe/20
+]
+
+researchCostMultiplier: 0.3
+research: {
+      parent: greenwePipe
+      planet: luntun
+       requirements: [
+         greenwe/10
+  ]
+ }

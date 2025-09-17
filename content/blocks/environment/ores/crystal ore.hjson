@@ -1,0 +1,4 @@
+variants: 4
+  itemDrop: quartzCrystal
+  name: quartzCrystal
+  type: OreBlock

@@ -1,0 +1,33 @@
+{
+  type: unitFactory
+  size: 2
+  consumes: {
+    power: 0.2
+  }
+  plans: [
+    {
+      unit: "helper"
+        requirements: [
+           greenwe/33
+           metal/33
+           gold/3
+   ]
+      time: 1400
+     }
+]
+requirements: [
+    metal/333
+    hotGraphite/33
+    nanoMatherial/3
+ ]
+  category: units
+  research: {
+      parent: tOne
+        requirements: [
+           greenwe/3333
+           metal/3333
+           gold/3333
+           closedSoul/33
+   ]
+  }
+ }

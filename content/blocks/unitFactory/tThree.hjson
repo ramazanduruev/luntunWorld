@@ -1,0 +1,41 @@
+{
+    type: Reconstructor
+    health: 1400
+    size: 4
+    constructTime: 4000
+    upgrades: [
+        ["fantik", "ceramic"]
+        ["monument", "ninja"]
+        ["wasp", "runner"]
+    ]
+    consumes: {
+        power: 3.5
+        items: {
+            items: [
+              greenwe/150
+              metal/140
+              gold/20
+              powerPlate/10
+              nanoMatherial/15
+            ]
+        }
+    }
+    requirements: [
+     greenwe/400
+     metal/280
+     gold/120
+     nanoMatherial/40
+     
+    ]
+    category: units
+    research: {
+      parent: tTwo
+       requirements: [
+        greenwe/10000
+        metal/6000
+        gold/3000
+        powerPlate/900
+        ice/2000
+  ]
+ }
+ }

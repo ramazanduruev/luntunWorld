@@ -1,0 +1,16 @@
+type: MessageBlock
+name: greenweAchievement
+description: need 200k greenwe / потратьте 200k тысяч гринви
+size: 1
+BuildVisibility: false
+requirements: [
+closedSoul/999999
+]
+category: logic
+research: {
+      parent: megaGreenwePlus
+      planet: Ubase
+        requirements: [
+   greenwe/200000
+   ]
+  }

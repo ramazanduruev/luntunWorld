@@ -1,0 +1,21 @@
+type: RepairTower
+size: 1
+squareSprite: false
+category: units
+requirements: [
+  greenwe/200
+  metal/120
+  powerPlate/10
+]
+range: 80
+healAmount: 0.4
+consumes: {
+  power: 1.4
+}
+researchCostMultiplier: 0.5
+research: {
+      parent: regenerator
+       requirements: [
+       uran/100
+  ]
+}

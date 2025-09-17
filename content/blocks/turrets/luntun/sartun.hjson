@@ -1,0 +1,63 @@
+{
+shootSound: laser-explosion-blast_gy_knhvd
+"ammoTypes": {
+"powerPlate": {
+                    type: BasicBulletType
+                    lifetime: 120
+                    speed: 2
+                    lightning: 3
+                    lightningColor: FFFFFFFF
+                    lightningLengthRand: 0.7
+                    lightningLength: 8
+                    lightningDamage: 4
+                    sprite: large-orb
+                    hitEffect: none
+                    despawnEffect: none
+                    despawnSound: spark
+                    frontColor: FFFFFFFF
+                    damage: 20
+                    backColor: FFFFFFFF
+                    bulletInterval: 3.2
+                    intervalBullet: {
+                        type: LightningBulletType
+                        lightningLength: 8
+                        lightningLengthRand: 0.7
+                        lightningDamage: 5
+                        lightningColor: FFFFFFFF
+                       }
+                   }
+          }
+   requirements: [
+   greenwe/10
+   metal/100
+   gold/30
+]
+
+   research: {
+      parent: monster
+        requirements: [
+           metal/800
+           gold/215
+   ]
+  }
+
+consumes: {
+power: 1.4
+  }
+
+  reload: 40
+  range: 130
+  shootEffect: casing1
+  category: turret
+  health: 80
+  size: 2
+  itemCapacity: 15
+  hasPower: true
+  hasLiquids: false
+  lightLiquid: water
+  type: ItemTurret
+drawer: {
+  type: DrawTurret
+  basePrefix: stone-
+}
+}

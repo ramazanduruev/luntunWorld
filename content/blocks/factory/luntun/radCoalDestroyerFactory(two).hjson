@@ -1,0 +1,26 @@
+type: GenericCrafter
+size: 2
+category: crafting
+requirements: [
+ metal/80
+]
+consumes: {
+  power: 1
+  items: [
+  radioactiveCoal/1
+  ]
+}
+craftTime: 20
+
+craftEffect: smeltsmoke
+outputItem: uran/1
+research: {
+    planet: luntun
+	parent: radCoalDestroyerFactory
+	requirements: [
+	greenwe/1200
+ metal/980
+ gold/800
+ superCoal/10
+	]
+}

@@ -1,0 +1,4 @@
+variants: 2
+  itemDrop: radioactiveCoal
+  name: radioactiveCoal
+  type: OreBlock

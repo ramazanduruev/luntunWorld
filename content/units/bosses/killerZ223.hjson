@@ -1,0 +1,113 @@
+{
+type: mech
+speed: 0.4
+hitSize: 20
+health: 26000
+mechSideSway: 0.25
+outlineColor: 272736FF
+weapons: [
+    {
+      name: killerZ223-weapon1
+      x: -21
+      y: 0
+      reload: 120
+      shootSound: shootElude
+      rotate: false
+      mirror: true
+      chargeSound: lasercharge2
+      alternate: false
+      layerOffset: -0.01
+      shoot: {
+        firstShotDelay: 60
+        shots: 14
+        shotDelay: 4
+      }
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 35
+        damage: 18
+        pierce: true
+        pierceCap: 2
+        buildingDamageMultiplier: 2
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+    {
+      name: none
+      x: 0
+      y: 12
+      reload: 240
+      shootSound: shootElude
+      rotate: false
+      mirror: false
+      chargeSound: lasercharge2
+      alternate: false
+      layerOffset: -0.01
+      sprite: ln-sun
+      bullet: {
+      type: BasicBulletType
+      speed: 4
+      lifetime: 35
+      damage: 14
+      pierce: true
+      pierceCap: 2
+      buildingDamageMultiplier: 5
+      chargeEffect: lightningCharge
+      shootEffect: shootSmall
+      splashDamage: 70
+      splashDamageRadius: 30
+      height: 18
+      width: 14
+      }
+     }
+    {
+  name: none
+		reload: 160
+		x: 0
+		y: 0
+		mirror: false
+		rotate: false
+		rotateSpeed: 3
+  shootSound: shootLancer
+  layerOffset: -0.001
+  alwaysShooting: true
+  shootStatus: boss
+  shootStatusDuration: 9999
+		bullet: {
+            type: shrapnelBulletType
+            lifetime: 15
+            damage: 200
+            serrations: 4
+            serrationSpacing: 9
+            serrationLenScl: 10
+            serrationWidth: 3
+            hitLarge: true
+            fromColor: abb3b3
+            toColor: e8eded
+            length: 80
+            width: 8
+            hitEffect: blastExplosion
+            shootEffect: blastExplosion
+            pierce: true
+            smokeEffect: hitBulletBig
+                }
+	              }
+    ]
+abilities: [
+{
+    type: ForceFieldAbility
+    radius: 50
+    max: 8000
+    cooldown: 90
+    regen: 0.01
+  }
+  {
+  type: SpawnDeathAbility
+  unit: killerZ223newPhase
+  amount: 1
+  }
+]
+}

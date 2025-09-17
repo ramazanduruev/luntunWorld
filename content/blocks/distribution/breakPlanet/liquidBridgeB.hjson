@@ -1,0 +1,18 @@
+{
+  type: LiquidBridge
+  health: 60
+  hasPower: false
+  range: 12
+  liquidPressure: 4
+  requirements: [
+    quartzCrystal/20
+  ]
+  category: liquid
+  research: {
+      parent: waterPump
+       requirements: [
+         drawingTierOne/260
+         drawingTierTwo/20
+  ]
+ }
+}

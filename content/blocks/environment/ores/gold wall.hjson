@@ -1,0 +1,5 @@
+type: OreBlock
+wallOre: true
+name: gold wall
+variants: 3
+itemDrop: gold

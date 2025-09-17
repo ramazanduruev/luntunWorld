@@ -1,0 +1,8 @@
+type: SteamVent
+blendGroup: soulFloor
+parent: soulFloor
+	variants: 2,
+attributes: {
+   water: 0.6
+}
+effectColor: 675b53

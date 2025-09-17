@@ -1,0 +1,12 @@
+type: AutoDoor
+size: 2
+armor: 6
+health: 300
+requirements: [
+ greenwe/60
+ metal/25
+ hotGraphite/15
+]
+research: bigRepairWall
+researchCostMultiplier: 0.5
+category: defense
