@@ -1,0 +1,11 @@
+
+captureWave: 10
+planet: voidWorld
+sector: 0
+research: colonia
+difficulty: 0
+alwaysUnlocked: true
+research: {
+parent: voidCore
+}
+

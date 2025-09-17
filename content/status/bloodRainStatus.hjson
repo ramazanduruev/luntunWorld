@@ -1,0 +1,4 @@
+name: bloodRainStatus
+reloadMultiplier: 1.30
+speedMultiplier: 1.10
+damage: -0.4

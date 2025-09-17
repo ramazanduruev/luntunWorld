@@ -1,0 +1,17 @@
+{
+	description: what is this
+	color: 000000
+hardness: 1
+    research: hotGraphite
+	charge: 0.0
+	explosiveness: 0
+	flammability: 0
+	radioactivity: 0
+	cost: 3.5
+ frames: 3
+  frameTime: 20
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

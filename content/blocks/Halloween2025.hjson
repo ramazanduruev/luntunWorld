@@ -1,0 +1,44 @@
+type: ConsumeGenerator
+size: 3
+health: 1
+squareSprite: false
+requirements: [
+metal/40
+superCoal/10
+]
+consumes: {
+  item: superCoal
+}
+category: logic
+itemDuration: 3600
+outlineColor: 2C2A36
+ambientSound: Halloween2025
+ambientSoundVolume: 1
+powerProduction: 0.016666666668
+research: {
+      parent: colonia
+       requirements: [
+        greenwe/1000
+   ]
+  }
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+      type: DrawArcSmelt
+    }
+    {
+      type: DrawDefault
+    }
+    {
+      type: DrawRegion
+      suffix: -rotator
+      spinSprite: true
+      rotateSpeed: 0.9
+    }
+    {
+      type: DrawRegion
+      suffix: -top
+    }
+  ]
+}

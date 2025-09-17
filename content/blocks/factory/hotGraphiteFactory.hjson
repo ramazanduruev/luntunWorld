@@ -1,0 +1,39 @@
+type: GenericCrafter
+size: 2
+itemCapacity: 10
+category: crafting
+requirements: [
+ greenwe/15
+ metal/20
+ superCoal/25
+]
+consumes: {
+  power: 1.2
+  items: [
+  superCoal/2
+  ]
+}
+craftTime: 50
+drawer: {
+  type: DrawMulti
+  drawers: [
+		  {
+		  type: DrawDefault
+		  }
+   {
+    type: DrawFlame
+    flameRadius: 1.8        
+    flameRadiusIn: 1
+    flameRadiusScl: 1.4
+    flameRadiusMag: 1
+    flameRadiusInMag: 1
+	flameColor: FF8F40FF
+   }
+  ]
+ }         
+craftEffect: smeltsmoke
+outputItem: hotGraphite/1
+research: {
+parent: iceFactory
+planet: luntun
+}
