@@ -1,0 +1,42 @@
+
+type: ConsumeGenerator
+category: power
+size: 1
+health: 100
+
+hasPower: true
+powerProduction: 0.8
+itemDuration: 240
+squareSprite: false
+
+consumes: {
+    items: [
+		superCoal/1
+	]
+}
+
+generateEffect: {
+	x: 0
+	y: 0
+	particles: 1
+    length: 0
+    lifetime: 60
+	type: ParticleEffect
+	sizeFrom: 0
+    sizeTo: 3
+	colorFrom: 6F6E80
+    colorTo: 9898A4
+}
+effectChance: 0.1
+
+requirements: [
+    greenwe/30
+    gold/10
+]
+
+research: {
+    parent: thermalPowerFactory
+    requirements: [
+        superCoal/200
+    ]
+}

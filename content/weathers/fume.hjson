@@ -1,0 +1,16 @@
+type: ParticleWeather
+localizedName: fume
+name: fume
+color: 232323FF
+noiseColor: 505050FF
+particleRegion: particle
+sizeMax: 7
+sizeMin: 1
+density: 1000
+useWindVector: true
+drawNoise: true
+opacityMultiplier: 0.7
+baseSpeed: 2
+soundVol: 0.53
+force: 1.8
+status: attackSpeed

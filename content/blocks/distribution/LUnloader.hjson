@@ -1,0 +1,15 @@
+type: Unloader
+health: 70
+capacity: 0
+
+requirements: [
+  metal/20
+] 
+category: effect
+
+research: {
+    parent: greenwePipe
+        requirements: [
+            metal/200
+    ] 
+}

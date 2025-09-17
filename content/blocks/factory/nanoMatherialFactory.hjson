@@ -1,0 +1,74 @@
+type: GenericCrafter
+size: 3
+category: crafting
+squareSprite: false
+requirements: [
+ greenwe/120
+ metal/90
+ gold/10
+]
+consumes: {
+  power: 2
+  items: [
+  greenwe/1
+  metal/3
+  hotGraphite/1
+  ]
+}
+craftTime: 120
+craftEffect: {
+  type: ParticleEffect
+  particles: 9
+  cone: 360
+  followParent: false
+  rotWithParent: false
+  sizeFrom: 1.2
+  sizeTo: 0.1
+  lifetime: 60
+  length: 3
+  baseLength: 5
+  interp: pow2
+  sizeInterp: pow3In
+}
+
+outputItem: nanoMatherial/1
+research: {
+    planet: luntun
+	parent: hotGraphiteFactory
+	requirements: [
+	greenwe/1000
+ metal/800
+ gold/600
+	]
+}
+drawer: {
+      type: DrawMulti
+      drawers: [	 
+        {
+    type: DrawRegion
+    suffix: -bottom
+    layerOffset: -0.002
+    }
+       {
+		  type: DrawRegion
+		  suffix: -rotator
+		  spinSprite: true
+		  rotateSpeed: 2
+    x: 0
+    y: 0
+    layerOffset: -0.001
+		  }
+    {
+		  type: DrawRegion
+		  suffix: -rotatorONE
+		  spinSprite: true
+		  rotateSpeed: 6
+    x: 0
+    y: 0
+    layerOffset: -0.001
+		  }
+		  {
+		  type: DrawDefault
+		  }
+      ]
+    }

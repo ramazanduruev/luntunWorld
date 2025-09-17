@@ -1,0 +1,21 @@
+type: MessageBlock
+name: lore 3
+description: Gold is another valuable resource that is very useful for creating units that need to be killed by their production \/ Золото — еще один ценный ресурс который очень полезен для создания юнитов необходимо уничтожить их производство
+size: 1
+requirements: [
+ 
+]
+category: logic
+research: {
+      parent: lore2
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: goldSandSector
+  }
+ ]
+}
