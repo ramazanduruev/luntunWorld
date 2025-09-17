@@ -1,0 +1,32 @@
+type:CoreBlock
+category: effect
+health: 3200
+size: 3
+
+itemCapacity: 2700
+unitCapModifier: 20
+unitType: "machete"
+incinerateNonBuildable: true
+isFirstTier: false
+squareSprite: false
+
+requirements: [
+    greenwe/2000
+    metal/200
+    nanoMatherial/60
+]
+
+research: {
+    name: luntun
+    planet: luntun
+    parent: colonia 
+requirements: [
+	greenwe/30000
+ metal/20000
+ gold/12000
+ hotGraphite/600
+ nanoMatherial/200
+	]
+}
+alwaysUnlocked: false
+

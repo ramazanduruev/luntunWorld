@@ -1,0 +1,15 @@
+captureWave: 19
+planet: luntun
+sector: 9
+research: colonia
+difficulty: 6
+alwaysUnlocked: false
+research: {
+parent: greenweZone
+objectives: [
+{
+type: SectorComplete
+preset: greenweZone
+  }
+ ]
+}

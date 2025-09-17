@@ -1,0 +1,15 @@
+
+planet: luntun
+sector: 2
+difficulty: 2
+alwaysUnlocked: false
+addStartingItems: false
+research: {
+parent: metalCanyon
+objectives: [
+{
+type: SectorComplete
+preset: metalCanyon
+  }
+ ]
+}

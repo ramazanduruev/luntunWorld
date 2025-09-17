@@ -1,0 +1,58 @@
+type: GenericCrafter
+size: 3
+category: crafting
+requirements: [
+ greenwe/600
+ metal/900
+ gold/200
+ ice/200
+ powerPlate/30
+ nanoMatherial/60
+]
+consumes: {
+  power: 6
+}
+craftTime: 18000
+
+craftEffect: smeltsmoke
+outputItem: closedSoul/3
+research: {
+    planet: luntun
+	parent: nanoMatherialFactory
+	requirements: [
+	greenwe/33333
+ metal/33333
+ gold/3333
+ ice/3333
+ uran/3333
+ powerPlate/3333
+ nanoMatherial/333
+	]
+objectives: [
+{
+type: SectorComplete
+preset: quietPlace
+  }
+ ]
+}
+drawer: {
+      type: DrawMulti
+      drawers: [	
+      {
+          type: DrawRegion
+		  suffix: -bottom
+    layerOffset: -0.01
+          }
+{
+		  type: DrawRegion
+		  suffix: -rotator
+		  spinSprite: true
+		  rotateSpeed: 0.4
+    x: 0
+    y: 0
+		  }
+		  {
+		  type: DrawDefault
+		  }
+      ]
+    }
