@@ -1,0 +1,45 @@
+{
+  type: ImpactReactor
+  health: 1100
+  size: 4
+  hasPower: true
+  hasLiquids: true
+  hasItems: true
+  warmupSpeed: 0.002
+  explosionShake: 10
+  lightColor: 000000
+  itemCapacity: 30
+  liquidCapacity: 50
+  itemDuration: 40
+  powerProduction: 25
+  explosionDamage: 1000
+  explosionRadius: 20
+  consumes: {
+    power: 6
+    liquid: {
+      liquid: air
+      amount: 0.4
+    }
+    items: {
+      items: [
+        uran/1
+      ]
+    }
+  }
+  requirements: [
+  greenwe/220
+  metal/680
+  powerPlate/40
+  superCoal/10
+  ]
+  category: power
+  research: {
+parent: solarPanel
+planet: luntun
+requirements: [
+        greenwe/3800
+        metal/4000
+        uran/100
+     ]
+  }
+}

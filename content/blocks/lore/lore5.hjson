@@ -1,0 +1,21 @@
+type: MessageBlock
+name: lore 5
+description: Why drone escape this place?  \/ почему дрон ушел с этого места?
+size: 1
+requirements: [
+ 
+]
+category: logic
+research: {
+      parent: lore4
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: A790base
+  }
+ ]
+}

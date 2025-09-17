@@ -1,0 +1,17 @@
+{
+"name": "ln",
+"displayName": "luntun",
+"description":
+  '''
+This mod add new planet and new solar sistem you drone which cleans planets 
+
+Developer: Votak (abzobua)
+language
+English
+Русский
+  '''
+"author": "Votak",
+"version": "2.6",
+"minGameVersion": 152,
+"subtitle": "Beta v2.6"
+}
