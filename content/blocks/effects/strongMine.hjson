@@ -1,0 +1,24 @@
+{
+type: ShockMine
+hasShadow: true
+health: 35
+damage: 10
+tileDamage: 8
+lenght: 10
+tendrils: 2
+size: 1
+requirements: [
+greenwe/4
+metal/10
+powerPlate/4
+]
+category: effect
+research: {
+      parent: weakMine
+       requirements: [
+       metal/2000
+       powerPlate/2000
+       nanoMatherial/100
+  ]
+ }
+}

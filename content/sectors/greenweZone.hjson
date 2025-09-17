@@ -1,0 +1,15 @@
+captureWave: 17
+planet: luntun
+sector: 8
+research: colonia
+difficulty: 8
+alwaysUnlocked: false
+research: {
+parent: fishingPort
+objectives: [
+{
+type: SectorComplete
+preset: fishingPort
+  }
+ ]
+}

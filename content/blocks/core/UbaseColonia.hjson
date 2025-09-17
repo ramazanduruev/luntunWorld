@@ -1,0 +1,23 @@
+type:CoreBlock
+category: logic
+health: 2400
+size: 2
+
+itemCapacity: 2500
+unitCapModifier: 15
+unitType: "knife"
+incinerateNonBuildable: true
+isFirstTier: false
+squareSprite: false
+
+requirements: [
+    greenwe/99999
+]
+
+research: {
+    root: true
+    name: luntunAchievement
+    planet: luntun
+}
+alwaysUnlocked: true
+

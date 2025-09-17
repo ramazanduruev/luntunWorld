@@ -1,0 +1,23 @@
+type: MessageBlock
+name: 10
+description: complete 10 sectors/завершить 10 секторов
+size: 1
+alwaysUnlocked: false
+BuildVisibility: false
+requirements: [
+closedSoul/999999
+]
+category: logic
+research: {
+      parent: LuntunAchievement
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: soulSector
+  }
+ ]
+  }

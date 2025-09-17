@@ -1,0 +1,21 @@
+type: MessageBlock
+name: selectAchievement
+description: o_o
+size: 1
+requirements: [
+closedSoul/999999999
+]
+category: logic
+research: {
+      parent: UbaseColonia
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: tutorial
+  }
+ ]
+  }

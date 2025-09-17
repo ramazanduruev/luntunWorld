@@ -1,0 +1,4 @@
+type: floor,
+name: greenweStone,
+variants: 8,
+wall: goldWalls

@@ -1,0 +1,15 @@
+captureWave: 20
+planet: luntun
+sector: 7
+research: colonia
+difficulty: 6
+alwaysUnlocked: false
+research: {
+parent: iceberg
+objectives: [
+{
+type: SectorComplete
+preset: iceberg
+  }
+ ]
+}

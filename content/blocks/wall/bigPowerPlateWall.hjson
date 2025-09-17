@@ -1,0 +1,19 @@
+{
+  type: wall
+  health: 1140
+  size: 2
+  lightningChance: 0.10
+  lightningDamage: 20
+  lightningColor: 4B5BABFF
+  requirements:[
+  metal/10
+  powerPlate/18
+  ]
+  research: {
+      parent: powerPlateWall
+       requirements: [
+         powerPlate/4000
+   ]
+  }
+  category: defense
+}

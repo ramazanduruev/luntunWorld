@@ -1,0 +1,142 @@
+type: flying
+flying: true
+speed: 2
+health: 780
+armor: 8
+range: 75
+drag: 0.1
+accel: 0.8
+hitSize: 15
+rotateSpeed: 3
+outlineColor: 0C0E29
+outlineRadius: 2
+engineSize : 0
+
+weapons: [
+{
+name: ceramic-weapon1
+		reload: 180
+		x: 0
+		y: 0
+		mirror: false
+		rotate: false
+		rotateSpeed: 3
+  shootSound: railgun
+  layerOffset: -0.001
+		bullet: {
+            type: shrapnelBulletType
+            lifetime: 10
+            damage: 50
+            serrations: 4
+            serrationSpacing: 9
+            serrationLenScl: 10
+            serrationWidth: 3
+            hitLarge: true
+            fromColor: abb3b3
+            toColor: e8eded
+            length: 80
+            width: 8
+            hitEffect: blastExplosion
+            shootEffect: blastExplosion
+            pierce: true
+            smokeEffect: hitBulletBig
+                }
+	              }
+  {
+    name: none
+    x: 0
+    y: 4
+    mirror: true
+    shootEffect: sparkShoot
+    smokeEffect: shootSmallSmoke
+    reload: 30
+    inaccuracy: 15
+    bullet: {
+      type: MissileBulletType
+      damage: 60
+      splashDamage: 6
+      splashDamageRadius: 15
+      sideAngle: 45
+      sideWidth: 8
+      sideLength: 10
+      hitEffect: fluxVapor
+      despawnEffect: blastExplosion
+      lifeTime: 135
+      shootSound: missile
+}
+}
+              ]
+
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 3CA370FF
+        colorTo: 3D6E70FF
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        offset: 0
+        lightScl: 1.5
+        lightOpacity: 2
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000010
+        y : 0
+        x : 6
+    }
+
+{
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 3CA370FF
+        colorTo: 3D6E70FF
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        offset: 0
+        lightScl: 1.5
+        lightOpacity: 2
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000010
+        y : 0
+        x : -6
+    }
+]
+
+parts: [
+    {
+        type: HoverPart
+        radius: 16
+        stroke: 3
+        phase: 85
+        layerOffset: -0.002
+        color: 3D6E70FF
+    }
+]
+research: {
+      parent: fantik
+       requirements: [
+         greenwe/4000
+         metal/1200
+         gold/450
+         uran/600
+         hotGraphite/40
+  ]
+ }
+

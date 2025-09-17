@@ -1,0 +1,15 @@
+
+planet: luntun
+sector: 3
+research: colonia
+difficulty: 3
+alwaysUnlocked: false
+research: {
+parent: goldSandSector
+objectives: [
+{
+type: SectorComplete
+preset: goldSandSector
+  }
+ ]
+}
