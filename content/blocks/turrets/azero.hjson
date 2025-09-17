@@ -1,0 +1,53 @@
+type: ItemTurret
+targetGround: false
+targetAir: true
+health: 120
+size: 1
+reload: 8
+range: 125
+outlines: true
+outlineColor: 6E6E80FF
+outlineRadius: 1
+engineSize : 2
+inaccuracy: 3
+rotateSpeed: 15
+targetInterval: 1
+shootSound: laser
+shootEffect: none
+shoot: {
+  type: ShootAlternate
+  shots: 3
+  shotDelay: 1
+}
+maxAmmo: 50
+ammoPerShot: 1
+ammoTypes: {
+  metal: {
+    speed: 7
+    damage: 4
+    ammoMultiplier: 5
+    homingPower: 0.1
+    width: 4
+    height: 6
+    lifetime: 25
+    collidesGround: false
+    hitColor: AF8704FF
+  }
+}
+requirements: [
+  metal/25
+]
+category: turret
+research: {
+      parent: monster
+      planet: luntun
+        requirements: [
+        greenwe/20
+        metal/40
+   ]
+  }
+
+drawer: {
+  type: DrawTurret
+  basePrefix: stone-
+}

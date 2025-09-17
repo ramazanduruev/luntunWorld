@@ -1,0 +1,90 @@
+{
+type: mech
+speed: 0.9
+hitSize: 14
+health: 250
+mechSideSway: 0.25
+outlineColor: 3C3838FF
+  outlines: true
+  outlineRadius: 4
+weapons: [
+    {
+      name: monument-weapon-1
+      x: 0
+      y: 0
+      reload: 120
+      shootSound: flame
+      rotate: true
+      mirror: false
+      chargeSound: lasercharge2
+      alternate: false
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 35
+        damage: 35
+        pierce: true
+        pierceCap: 2
+        buildingDamageMultiplier: 2.5
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+{
+      name: monument-weapon-2
+      x: 9
+      y: 0
+      reload: 30
+      shootSound: flame
+      rotate: false
+      mirror: false
+      chargeSound: lasercharge2
+      alternate: false
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 35
+        damage: 10
+        pierce: true
+        pierceCap: 2
+        buildingDamageMultiplier: 1
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+{
+      name: monument-weapon-3
+      x: -9
+      y: 0
+      reload: 30
+      shootSound: flame
+      rotate: false
+      mirror: false
+      chargeSound: lasercharge2
+      alternate: false
+      bullet: {
+        type: LiquidBulletType
+        liquid: slag
+        speed: 4
+        lifetime: 35
+        damage: 10
+        pierce: true
+        pierceCap: 2
+        buildingDamageMultiplier: 1
+        chargeEffect: lightningCharge
+        shootEffect: shootSmall
+      }
+     }
+    ]
+
+research: {
+      parent: fire
+       requirements: [
+         greenwe/800
+         metal/500
+         superCoal/20
+  ]
+ }
+}

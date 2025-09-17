@@ -1,0 +1,4 @@
+type: floor,
+name: goldFloor,
+variants: 6,
+wall: goldWalls

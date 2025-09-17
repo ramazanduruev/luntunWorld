@@ -1,0 +1,25 @@
+  type: DuctBridge
+update: true
+hasItems: true
+itemCapacity: 2
+isDuct: true
+underBullets: true
+  category: distribution
+  size: 1
+  health: 35
+  range: 6
+  transportTime: 0.5
+  hasPower: false
+
+  requirements: [
+      greenwe/25
+  ]
+
+  researchCostMultiplier: 0.3
+  research: {
+      parent: greenweRouter
+      planet: luntun
+       requirements: [
+         greenwe/60
+  ]
+ }

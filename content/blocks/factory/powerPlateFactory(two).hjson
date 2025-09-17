@@ -1,0 +1,29 @@
+type: GenericCrafter
+size: 2
+category: crafting
+requirements: [
+ greenwe/60
+ metal/120
+ gold/20
+]
+consumes: {
+  power: 0.8
+  items: [
+  metal/8
+  superCoal/2
+  ]
+}
+craftTime: 120
+
+craftEffect: smeltsmoke
+outputItem: powerPlate/2
+research: {
+    planet: luntun
+	parent: powerPlateFactory
+	requirements: [
+	greenwe/1200
+ metal/900
+ gold/700
+ powerPlate/60
+	]
+}

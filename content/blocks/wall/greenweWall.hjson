@@ -1,0 +1,15 @@
+{
+  type: wall
+  health: 320
+  size: 1
+  requirements:[
+  greenwe/8
+  ]
+  research: {
+      parent: colonia
+       requirements: [
+         greenwe/60
+   ]
+  }
+  category: defense
+}

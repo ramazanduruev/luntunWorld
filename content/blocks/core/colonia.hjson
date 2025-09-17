@@ -1,0 +1,23 @@
+type:CoreBlock
+category: effect
+health: 2400
+size: 2
+
+itemCapacity: 2500
+unitCapModifier: 15
+unitType: "knife"
+incinerateNonBuildable: true
+isFirstTier: true
+squareSprite: false
+
+requirements: [
+    greenwe/1200
+]
+
+research: {
+    root: true
+    name: luntun
+    planet: luntun
+}
+alwaysUnlocked: true
+

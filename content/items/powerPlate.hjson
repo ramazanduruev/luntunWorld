@@ -1,0 +1,14 @@
+{
+	color: 43434FFF
+	hardness: 3
+    research: magma
+	charge: 0.4
+	explosiveness: 0
+	flammability: 0
+	radioactivity: 0
+	cost: 3.5
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

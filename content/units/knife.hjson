@@ -1,0 +1,84 @@
+type: flying
+description: unit regenetate team buildings
+speed: 2.7
+flying: true
+health: 140
+armor: 2
+buildSpeed: 4
+mineSpeed: 4
+mineTier: 1
+itemCapacity: 30
+hitSize: 14
+outlineColor: 28282d
+outlineRadius: 4
+engineOffset : -1.5
+canDrown: false
+engineSize : 0
+useEngineElevation : false
+accel : 0.4
+shadowElevation : 0.2
+
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 3CA370FF
+        colorTo: 3D6E70FF
+        particles: 1
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 2
+        lightOpacity: 2
+        spin: 0
+        sizeFrom: 2
+        sizeTo: 0 
+        offset: 0
+        lightScl: 1.5
+        lightOpacity: 2
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000010
+        y : 0
+        x : 0
+    }
+]
+
+parts: [
+    {
+        type: HoverPart
+        radius: 10
+        stroke: 2
+        phase: 85
+        layerOffset: -0.001
+        color: 3D6E70FF
+    }
+]
+
+weapons: [
+{
+name: knife-weapon1
+x: 0
+y: 0
+rotate: false
+rotateSpeed: 6
+reload: 20
+recoil: 1 
+shootSound: lasershoot
+inaccuracy: 1 
+alternate: false
+mirror: false
+ejectEffect: none
+bullet: {
+type: LaserBoltBulletType
+speed: 5.2
+damage: 5
+healPercent: 1
+collidesTeam: true
+lifetime: 19
+backColor: 98ffa9
+frontColor: ffffff
+}
+}
+]

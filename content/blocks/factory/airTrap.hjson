@@ -1,0 +1,65 @@
+type: GenericCrafter
+size: 3
+squareSprite: false
+requirements: [
+greenwe/130
+metal/25
+]
+
+outputLiquid: air/0.3
+liquidCapacity: 10
+
+category: crafting
+
+craftEffect: {
+  type: ParticleEffect
+  particles: 6
+  cone: 360
+  followParent: true
+  rotWithParent: false
+  sizeFrom: 1.2
+  sizeTo: 0.1
+  lifetime: 40
+  length: 3
+  baseLength: 5
+  interp: pow2
+  sizeInterp: pow3In
+}
+
+drawer: {
+  type: DrawMulti
+  drawers: [
+    {
+    type: DrawRegion
+    suffix: -bottom
+    }
+    {
+    type: DrawLiquidTile
+    drawLiquid: air
+    padding: 3
+    }
+    {
+    type: DrawDefault
+    }
+    {
+    type: DrawParticles
+    radius: 10
+    particleRad: 17
+    particleLife: 160
+    alpha: 0.5
+    particleSize: 4
+    color: FFFFFF
+    }
+  ]
+}
+
+research: {
+      parent: colonia
+       requirements: [
+       greenwe/400
+       metal/200
+  ]
+}
+ambientSound: grinding
+ambientSoundVolume: 0.08
+alwaysUnlocked: false

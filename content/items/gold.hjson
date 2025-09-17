@@ -1,0 +1,16 @@
+{
+	color: FFF870FF
+	hardness: 2
+    research: greenwe
+	charge: 0.0
+	explosiveness: 0
+	flammability: 0
+	radioactivity: 0
+	cost: 3.5
+frames: 15
+  frameTime: 8
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

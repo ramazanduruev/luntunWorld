@@ -1,0 +1,15 @@
+{
+  type: wall
+  health: 460
+  size: 1
+  requirements:[
+  gold/6
+  ]
+  research: {
+      parent: greenweWall
+       requirements: [
+         gold/60
+   ]
+  }
+  category: defense
+}
