@@ -1,0 +1,18 @@
+{
+  type: LiquidRouter
+  health: 30
+  hasPower: false
+  placeableLiquid: true
+  liquidPressure: 6
+  requirements: [
+  metal/15
+  ]
+       category: liquid
+       research: {
+        parent: liquidPipe
+        requirements: [
+        greenwe/125
+        metal/15
+  ]
+ }
+}

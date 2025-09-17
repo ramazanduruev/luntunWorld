@@ -1,0 +1,38 @@
+{
+    type: Reconstructor
+    health: 1000
+    size: 3
+    constructTime: 2400
+    upgrades: [
+        ["fire", "monument"]
+        ["bee", "wasp"]
+        ["artik", "fantik"]
+    ]
+    consumes: {
+        power: 2.4
+        items: {
+            items: [
+              greenwe/80
+              metal/60
+              gold/70
+              powerPlate/10
+            ]
+        }
+    }
+    requirements: [
+     greenwe/200
+     metal/250
+     gold/80
+     
+    ]
+    category: units
+    research: {
+      parent: tOne
+       requirements: [
+        greenwe/4000
+        metal/4000
+        gold/2000
+        powerPlate/800
+  ]
+ }
+ }

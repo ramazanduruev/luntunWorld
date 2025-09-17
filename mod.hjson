@@ -1,0 +1,17 @@
+{
+"name": "ln",
+"displayName": "luntun",
+"description":
+  '''
+This is hard mod
+
+Developer: Votak (abzobua)
+language
+English
+Русский
+  '''
+"author": "Votak",
+"version": "2.3",
+"minGameVersion": 152,
+"subtitle": "Beta v2.3"
+}

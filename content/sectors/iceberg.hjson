@@ -1,0 +1,16 @@
+
+captureWave: 18
+planet: luntun
+sector: 6
+research: colonia
+difficulty: 4
+alwaysUnlocked: false
+research: {
+parent: labyrinth
+objectives: [
+{
+type: SectorComplete
+preset: labyrinth
+  }
+ ]
+}

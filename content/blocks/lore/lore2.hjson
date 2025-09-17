@@ -1,0 +1,21 @@
+type: MessageBlock
+name: lore 2
+description: we detected metal and we got new technology \/ мы обнаружили первый металл и изучили новые технологии
+size: 1
+requirements: [
+ 
+]
+category: logic
+research: {
+      parent: lore1
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: metalCanyon
+  }
+ ]
+  }

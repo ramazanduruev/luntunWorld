@@ -1,0 +1,25 @@
+type: GenericCrafter
+size: 2
+category: crafting
+requirements: [
+ metal/80
+]
+consumes: {
+  power: 1
+  items: [
+  radioactiveCoal/1
+  ]
+}
+craftTime: 40
+
+craftEffect: smeltsmoke
+outputItem: superCoal/1
+research: {
+    planet: luntun
+	parent: airTrap
+	requirements: [
+	greenwe/1000
+ metal/800
+ gold/600
+	]
+}

@@ -1,0 +1,4 @@
+variants: 4
+  itemDrop: ice
+  name: iceOre
+  type: OreBlock
