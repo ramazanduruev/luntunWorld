@@ -1,0 +1,30 @@
+{
+  type: ThermalGenerator
+  attribute: heat
+  powerProduction: 1
+  size: 2
+  generateEffect: {
+    type: ParticleEffect
+    particles: 8
+    length: 10
+    colorFrom: EB564BFF
+    colorTo: FF9166FF
+    interp: circleOut
+  }
+  category: power
+  health: 200
+  requirements: [
+  {
+  item: metal
+      amount: 180
+  }
+  ]
+  research: {
+      parent: solarPanel
+       requirements: [
+       greenwe/2000
+       metal/800
+       powerPlate/100
+  ]
+ }
+}

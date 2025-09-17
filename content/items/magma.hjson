@@ -1,0 +1,14 @@
+{
+	color: BF4232FF
+	hardness: 3
+    research: gold
+	charge: 0.0
+	explosiveness: 0.1
+	flammability: 1
+	radioactivity: 0
+	cost: 3.5
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}
