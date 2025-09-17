@@ -1,0 +1,9 @@
+
+captureWave: 8
+planet: breakPlanet
+sector: 35
+difficulty: 0
+alwaysUnlocked: false
+research: {
+parent: center
+}

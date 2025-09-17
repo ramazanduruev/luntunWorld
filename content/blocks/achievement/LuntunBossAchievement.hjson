@@ -1,0 +1,23 @@
+type: MessageBlock
+name: Boss1
+description: kill destroyer / убейте уничтожителя
+size: 1
+alwaysUnlocked: false
+BuildVisibility: false
+requirements: [
+closedSoul/999999
+]
+category: logic
+research: {
+      parent: LuntunAchievement
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: fishingPort
+  }
+ ]
+  }

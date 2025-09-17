@@ -1,0 +1,23 @@
+type: MessageBlock
+name: Boss3
+description: kill Z223 robot / убейте Z223 робота
+size: 1
+alwaysUnlocked: false
+BuildVisibility: false
+requirements: [
+closedSoul/999999
+]
+category: logic
+research: {
+      parent: LuntunSoulBoss
+      planet: Ubase
+        requirements: [
+
+   ]
+objectives: [
+{
+type: SectorComplete
+preset: Z223BossFight
+  }
+ ]
+  }

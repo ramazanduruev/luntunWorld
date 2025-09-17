@@ -1,0 +1,63 @@
+{
+  type: flying
+  armor: 5
+  speed: 0.45
+  hitSize: 12
+  flying: true
+  health: 2000
+  range: 110
+  outlineColor: 40354AFF
+  outlines: true
+  outlineRadius: 1
+  engineSize : 0
+
+weapons: [
+{
+name: none
+x: 0
+y: 0
+reload: 20
+shootSound: spark
+rotate: true
+rotateSpeed: 1.6
+recoil: 3
+top: true
+alwaysShooting: true
+bullet: {
+type: LightningBulletType
+damage: 60
+lightningLength: 10
+lightningLengthRand: 7
+lightningColor: 3CA370FF
+}
+}
+]
+
+abilities: [
+        {
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 3CA370FF
+        colorTo: 3D6E70FF
+        particles: 3
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 6
+        lightOpacity: 6
+        spin: 2
+        sizeFrom: 6
+        sizeTo: 0 
+        offset: 0
+        lightScl: 6
+        lightOpacity: 6
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000010
+        y : 0
+        x : 0
+    }
+]
+}
+

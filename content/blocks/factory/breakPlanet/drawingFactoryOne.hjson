@@ -1,0 +1,70 @@
+type: GenericCrafter
+size: 3
+itemCapacity: 30
+category: crafting
+requirements: [
+ tuntium/50
+]
+consumes: {
+  power: 0.8
+  items: [
+  tuntium/8
+  ]
+}
+craftTime: 120
+
+  drawer: {
+      type: DrawMulti
+      drawers: [	 
+        {
+    type: DrawRegion
+    suffix: -bottom
+    layerOffset: -0.002
+    }
+       {
+		  type: DrawRegion
+		  suffix: -rotator
+		  spinSprite: true
+		  rotateSpeed: 4
+    x: 6.8
+    y: 6.8
+    layerOffset: -0.001
+		  }
+    {
+		  type: DrawRegion
+		  suffix: -rotatorTwo
+		  spinSprite: true
+		  rotateSpeed: 4
+    x: -6.8
+    y: 6.8
+    layerOffset: -0.001
+		  }
+    {
+		  type: DrawRegion
+		  suffix: -rotatorThree
+		  spinSprite: true
+		  rotateSpeed: 4
+    x: -6.8
+    y: -6.8
+    layerOffset: -0.001
+		  }
+    {
+		  type: DrawRegion
+		  suffix: -rotator
+		  spinSprite: true
+		  rotateSpeed: 4
+    x: 6.8
+    y: -6.8
+    layerOffset: -0.001
+		  }
+		  {
+		  type: DrawDefault
+		  }
+      ]
+    }
+craftEffect: redgeneratespark
+outputItem: drawingTierOne/1
+research: {
+parent: center
+planet: breakPlanet
+}

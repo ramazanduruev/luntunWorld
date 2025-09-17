@@ -1,0 +1,23 @@
+
+  type: PointDefenseTurret
+  shootLength: 10
+  reload: 60
+  rotateSpeed: 8
+  range: 220
+  size: 2
+  health: 200
+  bulletDamage: 40
+  consumes: {
+    power: 2
+  }
+  category: effect
+  research: thrower
+  requirements: [
+    tuntium/230
+    drawingTierTwo/100
+  ]
+
+drawer: {
+  type: DrawTurret
+  basePrefix: stone-
+}

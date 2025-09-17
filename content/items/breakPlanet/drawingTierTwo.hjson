@@ -1,0 +1,14 @@
+{
+	color: 735C45FF
+hardness: 1
+research: drawingFactoryTwo
+	charge: 0.0
+	explosiveness: 0
+	flammability: 0
+	radioactivity: 0
+	cost: 3.5
+	hiddenOnPlanets: [
+		serpulo,
+		erekir
+	]
+}

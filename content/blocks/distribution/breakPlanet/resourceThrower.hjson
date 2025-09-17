@@ -1,0 +1,14 @@
+type: MassDriver
+size: 2
+squareSprite: false
+itemCapacity: 40
+reload: 200
+range: 180
+consumes: {
+
+}
+category: distribution
+research: center
+requirements: [
+tuntium/20
+]

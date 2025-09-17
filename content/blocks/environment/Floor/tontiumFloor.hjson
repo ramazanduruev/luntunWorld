@@ -1,0 +1,4 @@
+type: floor,
+name: tontiumFloor,
+variants: 9,
+wall: goldWalls

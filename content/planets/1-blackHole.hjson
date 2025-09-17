@@ -1,0 +1,34 @@
+
+mesh: [
+ {
+    type: SunMesh
+	divisions: 8
+	octaves: 1
+	persistence: 1
+	scl: 1
+	pow: 1
+	mag: 1
+	colorScale: 1
+    colors: [
+	  FFFFFFFF
+   FFFFFFFF
+	]
+  }
+]
+
+generator: {
+
+scale: 20
+
+}
+lightColor: 565656FF
+bloom: false
+accessible: false
+parent: sun
+alwaysUnlocked: false
+drawOrbit: false
+orbitRadius: 12000
+orbitSpacing: 0.2
+orbitOffset: 400
+orbitTime: 9000
+solarSystem: 1-blackHole

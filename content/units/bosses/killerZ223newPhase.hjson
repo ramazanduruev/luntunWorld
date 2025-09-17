@@ -1,0 +1,78 @@
+{
+type: mech
+speed: 1.4
+hitSize: 20
+health: 7000
+mechSideSway: 0.25
+outlineColor: 272736FF
+weapons: [
+   {
+		type: Weapon
+		alwaysShooting: true
+		shootY: 0
+		x: 0
+		reload: 6
+		mirror: false
+		shootSound: none
+		rotateSpeed: 0
+		bullet: {
+			type: BasicBulletType
+			pierce: true
+			pierceBuilding: true
+			width: 0
+			lifetime: 1
+			speed: 0
+			hitSize: 20
+			hittable: true
+			reflectable: false
+			absorbable: false 
+			shootEffect: none
+			smokeEffect: none
+			hitEffect: none
+			despawnEffect: none
+			damage: 20
+			splashDamage: 10
+			splashDamageRadius: 60
+			splashDamagePierce: true
+			buildingDamageMultiplier: 2
+			knockback: -1.25
+			lightRadius: 0
+			removeAfterPierce: false
+		}
+	} 
+    ]
+abilities: [
+{
+    type: ForceFieldAbility
+    radius: 40
+    max: 1000
+    cooldown: 60
+    regen: 0.1
+  }
+{
+        effect:{
+        type: ParticleEffect 
+        colorFrom: 444D6CFF
+        colorTo: 444D6CFF
+        particles: 3
+        cone: 360
+        length: 0
+        baseLength: 0
+        lightScl: 20
+        lightOpacity: 20
+        spin: 0
+        sizeFrom: 20
+        sizeTo: 0 
+        offset: 0
+        lightScl: 20
+        lightOpacity: 20
+        }
+        type : MoveEffectAbility
+        minVelocity: 0
+        interval: 0.0000010
+        layerOffset: -0.01
+        y : 0
+        x : 0
+    }
+]
+}

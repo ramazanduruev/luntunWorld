@@ -1,0 +1,60 @@
+{
+  ammoTypes:{
+    tuntium:{
+      x: 0
+      y: -6
+      damage: 10
+      buildingDamageMultiplier: 0.4
+      hitColor: 3D6E70FF
+      hitEffect: lightningCharge
+      shootEffect: pointShockwave
+      width: 10
+      height: 8
+      range: 150
+      speed: 6
+      type: BasicBulletType
+  }
+ }
+shoot: {
+ type: ShootBarrel
+ shotDelay: 3
+    barrels: [
+    1, -6, 0,
+    0, -6, 0,
+    0, -6, 0,
+    -1, -6, 0
+    ]
+}
+   requirements: [
+    tuntium/35
+]
+research: {
+      parent: center
+        requirements: [
+           tuntium/80
+   ]
+  }
+
+
+consumes: {
+  }
+
+  reload: 40
+  range: 150
+  shootEffect: casing1
+  category: turret
+  health: 430
+  size: 2
+  itemCapacity: 10
+  hasLiquids: false
+  lightLiquid: water
+  type: ItemTurret
+shootSound: laser
+
+
+
+drawer: {
+  type: DrawTurret
+  basePrefix: stone-
+}
+}

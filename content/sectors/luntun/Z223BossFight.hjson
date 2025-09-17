@@ -1,0 +1,15 @@
+captureWave: 40
+planet: luntun
+sector: 15
+research: colonia
+difficulty: 6
+alwaysUnlocked: false
+research: {
+parent: sharpRocks
+objectives: [
+{
+type: SectorComplete
+preset: sharpRocks
+  }
+ ]
+}
